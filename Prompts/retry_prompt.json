@@ -1,0 +1,5 @@
+{
+  "name": "Retry Prompt",
+  "description": "Correction message sent when LLM citations fail validation.",
+  "template": "Your previous answer cited the following sections which do not exist in the provided context:\n{invalid_citations}\nYou must only cite sections that appear in the context provided.\nPlease answer again using only valid sources."
+}
