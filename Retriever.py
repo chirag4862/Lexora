@@ -14,8 +14,12 @@ load_dotenv()
 
 
 
-embedding_model = HuggingFaceEmbeddings(model_name="Models/all-MiniLM-L6-V2")
-cross_encoder = HuggingFaceCrossEncoder(model_name="Models/ms-marco-MiniLM-L6-v2")
+embedding_model = HuggingFaceEmbeddings(
+    model_name="Models/bge-large-en",
+    model_kwargs={"device": "cpu"},
+    encode_kwargs={"normalize_embeddings": True}
+)
+cross_encoder = HuggingFaceCrossEncoder(model_name="Models/bge-reranker-base")
 
 
 Vectordb = Chroma(persist_directory="Database", embedding_function=embedding_model)
@@ -39,7 +43,7 @@ llm = ChatOpenAI(model="gpt-4.1-2025-04-14", temperature=0.1, model_kwargs={
 llm_model = llm.with_structured_output(available_filters_structure)
 
 
-print("relationship_map: ", relationship_map)
+# print("relationship_map: ", relationship_map)
 
 
 
@@ -75,7 +79,7 @@ def retrieve_docs(user_query: str):
         "user_query": user_query
     })
 
-    print("result: ", result)
+    # print("result: ", result)
 
 
     query_filter = {}
@@ -92,13 +96,13 @@ def retrieve_docs(user_query: str):
             key: {"$eq": value}
         }
 
-    print("query_filter: ", query_filter)
+    # print("query_filter: ", query_filter)
 
 
     semantic_retriever = Vectordb.as_retriever(search_type="mmr", search_kwargs = {
-        "k" : 15,
-        "fetch_k": 75,
-        "lambda_mult": 0.5,
+        "k" : 20,
+        "fetch_k": 150,
+        "lambda_mult": 0.8,
         "filter" : query_filter
     })
 
@@ -111,7 +115,7 @@ def retrieve_docs(user_query: str):
 
     retriever = EnsembleRetriever(
         retrievers=[semantic_retriever, bm25_retriever],
-        weights=[0.7, 0.3]
+        weights=[0.5, 0.5]
     )
     raw_results = retriever.invoke(user_query)
 
@@ -135,8 +139,8 @@ def retrieve_docs(user_query: str):
         reverse=True
     )
 
-    top_results = [doc for _, doc in ranked[:4]]
+    top_results = [doc for _, doc in ranked[:10]]
     # print("retrieved_data: \n", top_results)
-    print("retrieved_data: \n", type(top_results[0]))
+    # print("retrieved_data: \n", type(top_results[0]))
     
     return top_results

@@ -8,6 +8,7 @@ import re
 
 import pickle
 from langchain_community.retrievers import BM25Retriever
+from langchain_core.documents import Document
 
 """
 For Future if we add an upload data part we auto rename the file based on what content it has or ask user for it.
@@ -18,7 +19,7 @@ When you add judgments — we will add "caselaws" as an act_type(metadata[2]) va
 # All the pdf's are in here
 files = os.listdir("Data")
 
-Embedding_model = HuggingFaceEmbeddings(model_name="Models/all-MiniLM-L6-V2")
+Embedding_model = HuggingFaceEmbeddings(model_name="Models/bge-large-en")
 VectorStorage = Chroma(persist_directory="Database", embedding_function=Embedding_model)
 
 
@@ -61,22 +62,72 @@ separators = [
     " "
 ]
 
-
-
 def legislation_chunking(pages):
-    legislation_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=2000,
-        chunk_overlap=200,
-        separators=separators,
-        is_separator_regex=True
-    )
-    legislation_chunks = legislation_splitter.split_documents(pages)
+    all_chunks = []
+
+    for page in pages:
+        text = page.page_content
+        base_metadata = page.metadata.copy()
+
+        # Split page into individual sections
+        sections = re.split(r'(?=\n\d+\.)', text)
+
+        for section in sections:
+            section = section.strip()
+            if not section:
+                continue
+
+            # Check if this is a definitions section
+            if "definition" in section[:100].lower():
+                # Split by subsection markers (1) (2) (3)
+                sub_sections = re.split(r'(?=\(\d+\))', section)
+                for sub in sub_sections:
+                    sub = sub.strip()
+                    if not sub:
+                        continue
+                    doc = Document(page_content=sub, metadata=base_metadata.copy())
+                    match = re.match(r"^\s*(\d+)\.", sub)
+                    doc.metadata["section_number"] = match.group(1) if match else None
+                    all_chunks.append(doc)
+
+            elif len(section) > 1000:
+                # Sub-split large sections
+                splitter = RecursiveCharacterTextSplitter(
+                    chunk_size=1000,
+                    chunk_overlap=100,
+                    separators=separators,
+                    is_separator_regex=True
+                )
+                pieces = splitter.split_text(section)
+                for piece in pieces:
+                    doc = Document(page_content=piece, metadata=base_metadata.copy())
+                    match = re.match(r"^\s*(\d+)\.", piece.strip())
+                    doc.metadata["section_number"] = match.group(1) if match else None
+                    all_chunks.append(doc)
+
+            else:
+                doc = Document(page_content=section, metadata=base_metadata.copy())
+                match = re.match(r"^\s*(\d+)\.", section.strip())
+                doc.metadata["section_number"] = match.group(1) if match else None
+                all_chunks.append(doc)
+
+    return all_chunks
+
+
+# def legislation_chunking(pages):
+#     legislation_splitter = RecursiveCharacterTextSplitter(
+#         chunk_size=2000,
+#         chunk_overlap=200,
+#         separators=separators,
+#         is_separator_regex=True
+#     )
+#     legislation_chunks = legislation_splitter.split_documents(pages)
     
-    for chunk in legislation_chunks:
-        match = re.match(r"^\s*(\d+)\.", chunk.page_content.strip())
-        chunk.metadata["section_number"] = match.group(1) if match else None
+#     for chunk in legislation_chunks:
+#         match = re.match(r"^\s*(\d+)\.", chunk.page_content.strip())
+#         chunk.metadata["section_number"] = match.group(1) if match else None
     
-    return legislation_chunks
+#     return legislation_chunks
 
 def judgment_chunking(pages):
     judgment_splitter = RecursiveCharacterTextSplitter(

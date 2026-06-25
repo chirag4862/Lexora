@@ -2,1797 +2,1121 @@
   {
     "question": "What exactly is culpable homicide under the new Indian criminal law?",
     "ground_truth": "100. Whoever causes death by doing an act with the intention of causing death, or with the intention of causing such bodily injury as is likely to cause death, or with the knowledge that he is likely by such act to cause death, commits the offence of culpable homicide.",
-    "relevant_sections": [
-      "BNS Section 100"
-    ],
+    "relevant_sections": ["BNS Section 100"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What does the law mean by murder — when does culpable homicide become murder?",
     "ground_truth": "101. Except in the cases hereinafter excepted, culpable homicide is murder,—(a) if the act by which the death is caused is done with the intention of causing death; or (b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or (d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.",
-    "relevant_sections": [
-      "BNS Section 101"
-    ],
+    "relevant_sections": ["BNS Section 101"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for murder in India under the new law?",
     "ground_truth": "103. (1) Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine. (2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 103"
-    ],
+    "relevant_sections": ["BNS Section 103"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment if someone already serving life imprisonment commits murder?",
     "ground_truth": "104. Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person's natural life.",
-    "relevant_sections": [
-      "BNS Section 104"
-    ],
+    "relevant_sections": ["BNS Section 104"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for culpable homicide not amounting to murder under BNS?",
     "ground_truth": "105. Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death.",
-    "relevant_sections": [
-      "BNS Section 105"
-    ],
+    "relevant_sections": ["BNS Section 105"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "If someone kills a person while driving rashly and then runs away, what happens to them?",
     "ground_truth": "106. (2) Whoever causes death of any person by rash and negligent driving of vehicle not amounting to culpable homicide, and escapes without reporting it to a police officer or a Magistrate soon after the incident, shall be punished with imprisonment of either description of a term which may extend to ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 106"
-    ],
+    "relevant_sections": ["BNS Section 106"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What does 'rape' mean legally under the Bharatiya Nyaya Sanhita?",
     "ground_truth": "63. A man is said to commit \"rape\" if he—(a) penetrates his penis, to any extent, into the vagina, mouth, urethra or anus of a woman or makes her to do so with him or any other person; or (b) inserts, to any extent, any object or a part of the body, not being the penis, into the vagina, the urethra or anus of a woman or makes her to do so with him or any other person; or (c) manipulates any part of the body of a woman so as to cause penetration into the vagina, urethra, anus or any part of body of such woman or makes her to do so with him or any other person; or (d) applies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person, under the circumstances falling under any of the following seven descriptions:—(i) against her will; (ii) without her consent; (iii) with her consent, when her consent has been obtained by putting her or any person in whom she is interested, in fear of death or of hurt; (iv) with her consent, when the man knows that he is not her husband and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married; (v) with her consent when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent; (vi) with or without her consent, when she is under eighteen years of age; (vii) when she is unable to communicate consent.",
-    "relevant_sections": [
-      "BNS Section 63"
-    ],
+    "relevant_sections": ["BNS Section 63"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the minimum punishment for a regular rape offence?",
     "ground_truth": "64. (1) Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 64"
-    ],
+    "relevant_sections": ["BNS Section 64"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for gang rape under the new law?",
     "ground_truth": "70. (1) Where a woman is raped by one or more persons constituting a group or acting in furtherance of a common intention, each of those persons shall be deemed to have committed the offence of rape and shall be punished with rigorous imprisonment for a term which shall not be less than twenty years, but which may extend to imprisonment for life which shall mean imprisonment for the remainder of that person's natural life, and with fine: Provided that such fine shall be just and reasonable to meet the medical expenses and rehabilitation of the victim: Provided further that any fine imposed under this sub-section shall be paid to the victim.",
-    "relevant_sections": [
-      "BNS Section 70"
-    ],
+    "relevant_sections": ["BNS Section 70"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Is it a crime if someone has sex with a woman by promising to marry her with no intention of doing so?",
     "ground_truth": "69. Whoever, by deceitful means or by making promise to marry to a woman without any intention of fulfilling the same, has sexual intercourse with her, such sexual intercourse not amounting to the offence of rape, shall be punished with imprisonment of either description for a term which may extend to ten years and shall also be liable to fine. Explanation.—\"deceitful means\" shall include inducement for, or false promise of employment or promotion, or marrying by suppressing identity.",
-    "relevant_sections": [
-      "BNS Section 69"
-    ],
+    "relevant_sections": ["BNS Section 69"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the legal definition of theft under the new Indian law?",
     "ground_truth": "303. (1) Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking, is said to commit theft.",
-    "relevant_sections": [
-      "BNS Section 303"
-    ],
+    "relevant_sections": ["BNS Section 303"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What happens if someone steals from a place of worship or a government building?",
     "ground_truth": "305. Whoever commits theft—(a) in any building, tent or vessel used as a human dwelling or used for the custody of property; or (b) of any means of transport used for the transport of goods or passengers; or (c) of any article or goods from any means of transport used for the transport of goods or passengers; or (d) of idol or icon in any place of worship; or (e) of any property of the Government or of a local authority, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 305"
-    ],
+    "relevant_sections": ["BNS Section 305"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is robbery and how is it defined in the BNS?",
     "ground_truth": "309. (1) In all robbery there is either theft or extortion. (2) Theft is robbery if, in order to the committing of the theft, or in committing the theft, or in carrying away or attempting to carry away property obtained by the theft, the offender, for that end voluntarily causes or attempts to cause to any person death or hurt or wrongful restraint, or fear of instant death or of instant hurt, or of instant wrongful restraint. (3) Extortion is robbery if the offender, at the time of committing the extortion, is in the presence of the person put in fear, and commits the extortion by putting that person in fear of instant death, of instant hurt, or of instant wrongful restraint to that person or to some other person, and, by so putting in fear, induces the person so put in fear then and there to deliver up the thing extorted.",
-    "relevant_sections": [
-      "BNS Section 309"
-    ],
+    "relevant_sections": ["BNS Section 309"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for robbery if it happens at night on a highway?",
     "ground_truth": "309. (4) Whoever commits robbery shall be punished with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine; and, if the robbery be committed on the highway between sunset and sunrise, the imprisonment may be extended to fourteen years.",
-    "relevant_sections": [
-      "BNS Section 309"
-    ],
+    "relevant_sections": ["BNS Section 309"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is dacoity and how many people does it require?",
     "ground_truth": "310. (1) When five or more persons conjointly commit or attempt to commit a robbery, or where the whole number of persons conjointly committing or attempting to commit a robbery, and persons present and aiding such commission or attempt, amount to five or more, every person so committing, attempting or aiding, is said to commit dacoity. (2) Whoever commits dacoity shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 310"
-    ],
+    "relevant_sections": ["BNS Section 310"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What does 'grievous hurt' mean under Indian law?",
     "ground_truth": "116. The following kinds of hurt only are designated as \"grievous\", namely:—(a) Emasculation; (b) Permanent privation of the sight of either eye; (c) Permanent privation of the hearing of either ear; (d) Privation of any member or joint; (e) Destruction or permanent impairing of the powers of any member or joint; (f) Permanent disfiguration of the head or face; (g) Fracture or dislocation of a bone or tooth; (h) Any hurt which endangers life or which causes the sufferer to be during the space of fifteen days in severe bodily pain, or unable to follow his ordinary pursuits.",
-    "relevant_sections": [
-      "BNS Section 116"
-    ],
+    "relevant_sections": ["BNS Section 116"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What are the punishments listed in the new criminal law for offenders?",
     "ground_truth": "4. The punishments to which offenders are liable under the provisions of this Sanhita are—(a) Death; (b) Imprisonment for life; (c) Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; (d) Forfeiture of property; (e) Fine; (f) Community Service.",
-    "relevant_sections": [
-      "BNS Section 4"
-    ],
+    "relevant_sections": ["BNS Section 4"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'organised crime' under the new law?",
     "ground_truth": "111. (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime.",
-    "relevant_sections": [
-      "BNS Section 111"
-    ],
+    "relevant_sections": ["BNS Section 111"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is a 'terrorist act' as defined in the Bharatiya Nyaya Sanhita?",
     "ground_truth": "113. (1) Whoever does any act with the intent to threaten or likely to threaten the unity, integrity, sovereignty, security, or economic security of India or with the intent to strike terror or likely to strike terror in the people or any section of the people in India or in any foreign country,—(a) by using bombs, dynamite or other explosive substance or inflammable substance or firearms or other lethal weapons or poisonous or noxious gases or other chemicals or by any other substance (whether biological, radioactive, nuclear or otherwise) of a hazardous nature or by any other means of whatever nature to cause or likely to cause—(i) death of, or injury to, any person or persons; or (ii) loss of, or damage to, or destruction of, property; or (iii) disruption of any supplies or services essential to the life of the community in India or in any foreign country; or (iv) damage to, the monetary stability of India by way of production or smuggling or circulation of counterfeit Indian paper currency, coin or of any other material; or (v) damage or destruction of any property in India or in a foreign country used or intended to be used for the defence of India or in connection with any other purposes of the Government of India, any State Government or any of their agencies; or (b) overawes by means of criminal force or the show of criminal force or attempts to do so or causes death of any public functionary or attempts to cause death of any public functionary; or (c) detains, kidnaps or abducts any person and threatening to kill or injure such person or does any other act in order to compel the Government of India, any State Government or the Government of a foreign country or an international or inter-governmental organisation or any other person to do or abstain from doing any act, commit a terrorist act.",
-    "relevant_sections": [
-      "BNS Section 113"
-    ],
+    "relevant_sections": ["BNS Section 113"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Can a husband be prosecuted for rape against his own wife in India?",
     "ground_truth": "63. Exception 2.—Sexual intercourse or sexual acts by a man with his own wife, the wife not being under eighteen years of age, is not rape.",
-    "relevant_sections": [
-      "BNS Section 63"
-    ],
+    "relevant_sections": ["BNS Section 63"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment if a man commits rape and already has a prior conviction for rape?",
     "ground_truth": "71. Whoever has been previously convicted of an offence punishable under section 64 or section 65 or section 66 or section 70 and is subsequently convicted of an offence punishable under any of the said sections shall be punished with imprisonment for life which shall mean imprisonment for the remainder of that person's natural life.",
-    "relevant_sections": [
-      "BNS Section 71"
-    ],
+    "relevant_sections": ["BNS Section 71"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is cruelty to a wife under the new law and what is the punishment?",
     "ground_truth": "85. Whoever, being the husband or the relative of the husband of a woman, subjects such woman to cruelty shall be punished with imprisonment for a term which may extend to three years and shall also be liable to fine. 86. For the purposes of section 85, \"cruelty\" means—(a) any wilful conduct which is of such a nature as is likely to drive the woman to commit suicide or to cause grave injury or danger to life, limb or health (whether mental or physical) of the woman; or (b) harassment of the woman where such harassment is with a view to coercing her or any person related to her to meet any unlawful demand for any property or valuable security or is on account of failure by her or any person related to her to meet such demand.",
-    "relevant_sections": [
-      "BNS Section 85",
-      "BNS Section 86"
-    ],
+    "relevant_sections": ["BNS Section 85", "BNS Section 86"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'cheating' as defined under the Bharatiya Nyaya Sanhita?",
     "ground_truth": "318. (1) Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property to any person, or to consent that any person shall retain any property, or intentionally induces the person so deceived to do or omit to do anything which he would not do or omit if he were not so deceived, and which act or omission causes or is likely to cause damage or harm to that person in body, mind, reputation or property, is said to cheat. Explanation.—A dishonest concealment of facts is a deception within the meaning of this section.",
-    "relevant_sections": [
-      "BNS Section 318"
-    ],
+    "relevant_sections": ["BNS Section 318"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "When can a person use deadly force in self-defence under the new law?",
     "ground_truth": "38. The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—(a) such an assault as may reasonably cause the apprehension that death will otherwise be the consequence of such assault; (b) such an assault as may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such assault; (c) an assault with the intention of committing rape; (d) an assault with the intention of gratifying unnatural lust; (e) an assault with the intention of kidnapping or abducting; (f) an assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause him to apprehend that he will be unable to have recourse to the public authorities for his release; (g) an act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act.",
-    "relevant_sections": [
-      "BNS Section 38"
-    ],
+    "relevant_sections": ["BNS Section 38"],
     "query_type": "procedural",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'extortion' under the BNS?",
     "ground_truth": "308. (1) Whoever intentionally puts any person in fear of any injury to that person, or to any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property, or valuable security or anything signed or sealed which may be converted into a valuable security, commits extortion.",
-    "relevant_sections": [
-      "BNS Section 308"
-    ],
+    "relevant_sections": ["BNS Section 308"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'kidnapping' as per the Bharatiya Nyaya Sanhita?",
     "ground_truth": "137. (1) Kidnapping is of two kinds: kidnapping from India, and kidnapping from lawful guardianship—(a) whoever conveys any person beyond the limits of India without the consent of that person, or of some person legally authorised to consent on behalf of that person, is said to kidnap that person from India; (b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship.",
-    "relevant_sections": [
-      "BNS Section 137"
-    ],
+    "relevant_sections": ["BNS Section 137"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the offence of 'act endangering sovereignty and integrity of India' in the new law — and how does it differ from the old sedition law?",
-    "ground_truth": "152. Whoever, purposely or knowingly, by words, either spoken or written, or by signs, or by visible representation, or by electronic communication or by use of financial mean, or otherwise, excites or attempts to excite, secession or armed rebellion or subversive activities, or encourages feelings of separatist activities or endangers sovereignty or unity and integrity of India; or indulges in or commits any such act shall be punished with imprisonment for life or with imprisonment which may extend to seven years, and shall also be liable to fine. Explanation.—Comments expressing disapprobation of the measures, or administrative or other action of the Government with a view to obtain their alteration by lawful means without exciting or attempting to excite the activities referred to in this section do not constitute an offence under this section.",
-    "relevant_sections": [
-      "BNS Section 152"
-    ],
+    "ground_truth": "[IPC Section 124A — Sedition:] Whoever, by words, either spoken or written, or by signs, or by visible representation, or otherwise, brings or attempts to bring into hatred or contempt, or excites or attempts to excite disaffection towards, the Government established by law in India, shall be punished with imprisonment for life, to which fine may be added, or with imprisonment which may extend to three years, to which fine may be added, or with fine. Explanation 1.—The expression \"disaffection\" includes disloyalty and all feelings of enmity. Explanation 2.—Comments expressing disapprobation of the measures of the Government with a view to obtain their alteration by lawful means without exciting or attempting to excite any feelings of disaffection, do not constitute an offence under this section. [BNS Section 152:] Whoever, purposely or knowingly, by words, either spoken or written, or by signs, or by visible representation, or by electronic communication or by use of financial mean, or otherwise, excites or attempts to excite, secession or armed rebellion or subversive activities, or encourages feelings of separatist activities or endangers sovereignty or unity and integrity of India; or indulges in or commits any such act shall be punished with imprisonment for life or with imprisonment which may extend to seven years, and shall also be liable to fine. Explanation.—Comments expressing disapprobation of the measures, or administrative or other action of the Government with a view to obtain their alteration by lawful means without exciting or attempting to excite the activities referred to in this section do not constitute an offence under this section.",
+    "relevant_sections": ["BNS Section 152", "IPC Section 124A"],
     "query_type": "comparison",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'petty organised crime' under the new Bharatiya Nyaya Sanhita?",
     "ground_truth": "112. (1) Whoever, being a member of a group or gang, either singly or jointly, commits any act of theft, snatching, cheating, unauthorised selling of tickets, unauthorised betting or gambling, selling of public examination question papers or any other similar criminal act, is said to commit petty organised crime. Explanation.—For the purposes of this sub-section \"theft\" includes trick theft, theft from vehicle, dwelling house or business premises, cargo theft, pick pocketing, theft through card skimming, shoplifting and theft of Automated Teller Machine. (2) Whoever commits any petty organised crime shall be punished with imprisonment for a term which shall not be less than one year but which may extend to seven years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 112"
-    ],
+    "relevant_sections": ["BNS Section 112"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'wrongful confinement' and what are the punishments based on how long someone is illegally held?",
     "ground_truth": "127. (1) Whoever wrongfully restrains any person in such a manner as to prevent that person from proceedings beyond certain circumscribing limits, is said \"wrongfully to confine\" that person. (2) Whoever wrongfully confines any person shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to five thousand rupees, or with both. (3) Whoever wrongfully confines any person for three days, or more, shall be punished with imprisonment of either description for a term which may extend to three years, or with fine which may extend to ten thousand rupees, or with both. (4) Whoever wrongfully confines any person for ten days or more, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine which shall not be less than ten thousand rupees.",
-    "relevant_sections": [
-      "BNS Section 127"
-    ],
+    "relevant_sections": ["BNS Section 127"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "If someone kills another during grave and sudden provocation, is it still murder?",
     "ground_truth": "Exception 1.—Culpable homicide is not murder if the offender, whilst deprived of the power of self-control by grave and sudden provocation, causes the death of the person who gave the provocation or causes the death of any other person by mistake or accident: Provided that the provocation is not,—(a) sought or voluntarily provoked by the offender as an excuse for killing or doing harm to any person; (b) given by anything done in obedience to the law, or by a public servant in the lawful exercise of the powers of such public servant; (c) given by anything done in the lawful exercise of the right of private defence. Explanation.—Whether the provocation was grave and sudden enough to prevent the offence from amounting to murder is a question of fact.",
-    "relevant_sections": [
-      "BNS Section 101"
-    ],
+    "relevant_sections": ["BNS Section 101"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Is BNS community service an entirely new punishment that didn't exist before?",
-    "ground_truth": "4. The punishments to which offenders are liable under the provisions of this Sanhita are—(a) Death; (b) Imprisonment for life; (c) Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; (d) Forfeiture of property; (e) Fine; (f) Community Service.",
-    "relevant_sections": [
-      "BNS Section 4"
-    ],
+    "ground_truth": "[IPC Section 53 — Punishments:] The punishments to which offenders are liable under the provisions of this Code are—First.—Death; Secondly.—Imprisonment for life; Thirdly.—[Omitted]; Fourthly.—Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; Fifthly.—Forfeiture of property; Sixthly.—Fine. [BNS Section 4 — Punishments:] The punishments to which offenders are liable under the provisions of this Sanhita are—(a) Death; (b) Imprisonment for life; (c) Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; (d) Forfeiture of property; (e) Fine; (f) Community Service. [Community Service is thus a new addition in BNS not present in IPC Section 53.]",
+    "relevant_sections": ["BNS Section 4", "IPC Section 53"],
     "query_type": "comparison",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'snatching' as a specific offence under the new Indian criminal law?",
     "ground_truth": "304. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 304"
-    ],
+    "relevant_sections": ["BNS Section 304"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'dishonestly' defined as in the BNS?",
     "ground_truth": "2. (7) \"dishonestly\" means doing anything with the intention of causing wrongful gain to one person or wrongful loss to another person;",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the definition of a 'child' under the Bharatiya Nyaya Sanhita?",
     "ground_truth": "2. (3) \"child\" means any person below the age of eighteen years;",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'fraudulently' defined as under the BNS?",
     "ground_truth": "2. (9) \"fraudulently\" means doing anything with the intention to defraud but not otherwise;",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What happens if five or more persons commit murder on the basis of caste or religion?",
     "ground_truth": "103. (2) When a group of five or more persons acting in concert commits murder on the ground of race, caste or community, sex, place of birth, language, personal belief or any other similar ground each member of such group shall be punished with death or with imprisonment for life, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 103"
-    ],
+    "relevant_sections": ["BNS Section 103"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Is voluntarily causing hurt a crime and what is the punishment?",
     "ground_truth": "115. (1) Whoever does any act with the intention of thereby causing hurt to any person, or with the knowledge that he is likely thereby to cause hurt to any person, and does thereby cause hurt to any person, is said \"voluntarily to cause hurt\". (2) Whoever, except in the case provided for by sub-section (1) of section 122 voluntarily causes hurt, shall be punished with imprisonment of either description for a term which may extend to one year, or with fine which may extend to ten thousand rupees, or with both.",
-    "relevant_sections": [
-      "BNS Section 115"
-    ],
+    "relevant_sections": ["BNS Section 115"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for voluntarily causing grievous hurt?",
     "ground_truth": "117. (2) Whoever, except in the case provided for by sub-section (2) of section 122, voluntarily causes grievous hurt, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 117"
-    ],
+    "relevant_sections": ["BNS Section 117"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Can a doctor be prosecuted for causing death while performing a medical procedure?",
     "ground_truth": "106. (1) Whoever causes death of any person by doing any rash or negligent act not amounting to culpable homicide, shall be punished with imprisonment of either description for a term which may extend to five years, and shall also be liable to fine; and if such act is done by a registered medical practitioner while performing medical procedure, he shall be punished with imprisonment of either description for a term which may extend to two years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 106"
-    ],
+    "relevant_sections": ["BNS Section 106"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for abetting suicide of a child or person of unsound mind?",
     "ground_truth": "107. If any child, any person of unsound mind, any delirious person or any person in a state of intoxication, commits suicide, whoever abets the commission of such suicide, shall be punished with death or imprisonment for life, or imprisonment for a term not exceeding ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 107"
-    ],
+    "relevant_sections": ["BNS Section 107"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "How does the FIR registration process work under the new Bharatiya Nagarik Suraksha Sanhita?",
     "ground_truth": "173. (1) Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is committed, may be given orally or by electronic communication to an officer in charge of a police station, and if given—(i) orally, it shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it; (ii) by electronic communication, it shall be taken on record by him on being signed within three days by the person giving it, and the substance thereof shall be entered in a book to be kept by such officer in such form as the State Government may by rules prescribe in this behalf. (2) A copy of the information as recorded under sub-section (1) shall be given forthwith, free of cost, to the informant or the victim.",
-    "relevant_sections": [
-      "BNSS Section 173"
-    ],
+    "relevant_sections": ["BNSS Section 173"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Can police arrest someone without a warrant and in what situations?",
     "ground_truth": "35. (1) Any police officer may without an order from a Magistrate and without a warrant, arrest any person—(a) who commits, in the presence of a police officer, a cognizable offence; or (b) against whom a reasonable complaint has been made, or credible information has been received, or a reasonable suspicion exists that he has committed a cognizable offence punishable with imprisonment for a term which may be less than seven years or which may extend to seven years whether with or without fine, if the following conditions are satisfied, namely:—(i) the police officer has reason to believe on the basis of such complaint, information, or suspicion that such person has committed the said offence; (ii) the police officer is satisfied that such arrest is necessary—(a) to prevent such person from committing any further offence; or (b) for proper investigation of the offence; or (c) to prevent such person from causing the evidence of the offence to disappear or tampering with such evidence in any manner; or (d) to prevent such person from making any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade him from disclosing such facts to the Court or to the police officer; or (e) as unless such person is arrested, his presence in the Court whenever required cannot be ensured.",
-    "relevant_sections": [
-      "BNSS Section 35"
-    ],
+    "relevant_sections": ["BNSS Section 35"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "How long can the police hold someone in custody without presenting them to a magistrate?",
     "ground_truth": "58. No police officer shall detain in custody a person arrested without warrant for a longer period than under all the circumstances of the case is reasonable, and such period shall not, in the absence of a special order of a Magistrate under section 187, exceed twenty-four hours exclusive of the time necessary for the journey from the place of arrest to the Magistrate's Court, whether having jurisdiction or not.",
-    "relevant_sections": [
-      "BNSS Section 58"
-    ],
+    "relevant_sections": ["BNSS Section 58"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What are the rules about police custody and how long can a Magistrate allow someone to be held in custody for investigation?",
     "ground_truth": "187. (3) The Magistrate may authorise the detention of the accused person, beyond the period of fifteen days, if he is satisfied that adequate grounds exist for doing so, but no Magistrate shall authorise the detention of the accused person in custody under this sub-section for a total period exceeding—(i) ninety days, where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of ten years or more; (ii) sixty days, where the investigation relates to any other offence, and, on the expiry of the said period of ninety days, or sixty days, as the case may be, the accused person shall be released on bail if he is prepared to and does furnish bail.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "relevant_sections": ["BNSS Section 187"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is bail and who gets bail when arrested for a non-bailable offence?",
     "ground_truth": "480. (1) When any person accused of, or suspected of, the commission of any non-bailable offence is arrested or detained without warrant by an officer in charge of a police station or appears or is brought before a Court other than the High Court or Court of Session, he may be released on bail, but—(i) such person shall not be so released if there appear reasonable grounds for believing that he has been guilty of an offence punishable with death or imprisonment for life; (ii) such person shall not be so released if such offence is a cognizable offence and he had been previously convicted of an offence punishable with death, imprisonment for life or imprisonment for seven years or more, or he had been previously convicted on two or more occasions of a cognizable offence punishable with imprisonment for three years or more but less than seven years.",
-    "relevant_sections": [
-      "BNSS Section 480"
-    ],
+    "relevant_sections": ["BNSS Section 480"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is anticipatory bail and how do you apply for it?",
     "ground_truth": "482. (1) When any person has reason to believe that he may be arrested on an accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction under this section; and that Court may, if it thinks fit, direct that in the event of such arrest, he shall be released on bail. (2) When the High Court or the Court of Session makes a direction under sub-section (1), it may include such conditions in such directions in the light of the facts of the particular case, as it may think fit, including—(i) a condition that the person shall make himself available for interrogation by a police officer as and when required; (ii) a condition that the person shall not, directly or indirectly, make any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade him from disclosing such facts to the Court or to any police officer; (iii) a condition that the person shall not leave India without the previous permission of the Court.",
-    "relevant_sections": [
-      "BNSS Section 482"
-    ],
+    "relevant_sections": ["BNSS Section 482"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is the definition of a 'bailable offence' versus a 'non-bailable offence'?",
     "ground_truth": "2. (c) \"bailable offence\" means an offence which is shown as bailable in the First Schedule, or which is made bailable by any other law for the time being in force; and \"non-bailable offence\" means any other offence;",
-    "relevant_sections": [
-      "BNSS Section 2"
-    ],
+    "relevant_sections": ["BNSS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is a 'cognizable offence'?",
     "ground_truth": "2. (g) \"cognizable offence\" means an offence for which, and \"cognizable case\" means a case in which, a police officer may, in accordance with the First Schedule or under any other law for the time being in force, arrest without warrant;",
-    "relevant_sections": [
-      "BNSS Section 2"
-    ],
+    "relevant_sections": ["BNSS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is a 'complaint' under the BNSS?",
     "ground_truth": "2. (h) \"complaint\" means any allegation made orally or in writing to a Magistrate, with a view to his taking action under this Sanhita, that some person, whether known or unknown, has committed an offence, but does not include a police report.",
-    "relevant_sections": [
-      "BNSS Section 2"
-    ],
+    "relevant_sections": ["BNSS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "After how many days can a Magistrate take cognizance and what is the process?",
     "ground_truth": "210. (1) Subject to the provisions of this Chapter, any Magistrate of the first class, and any Magistrate of the second class specially empowered in this behalf under sub-section (2), may take cognizance of any offence—(a) upon receiving a complaint of facts, including any complaint filed by a person authorised under any special law, which constitutes such offence; (b) upon a police report (submitted in any mode including electronic mode) of such facts; (c) upon information received from any person other than a police officer, or upon his own knowledge, that such offence has been committed.",
-    "relevant_sections": [
-      "BNSS Section 210"
-    ],
+    "relevant_sections": ["BNSS Section 210"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Does the police have to inform the victim about the progress of an investigation?",
     "ground_truth": "193. (3)(ii) the police officer shall, within a period of ninety days, inform the progress of the investigation by any means including through electronic communication to the informant or the victim.",
-    "relevant_sections": [
-      "BNSS Section 193"
-    ],
+    "relevant_sections": ["BNSS Section 193"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What must police do when someone is arrested — must they inform family?",
     "ground_truth": "48. (1) Every police officer or other person making any arrest under this Sanhita shall forthwith give the information regarding such arrest and place where the arrested person is being held to any of his relatives, friends or such other persons as may be disclosed or nominated by the arrested person for the purpose of giving such information and also to the designated police officer in the district. (2) The police officer shall inform the arrested person of his rights under sub-section (1) as soon as he is brought to the police station.",
-    "relevant_sections": [
-      "BNSS Section 48"
-    ],
+    "relevant_sections": ["BNSS Section 48"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Does the BNSS require police to tell an arrested person they can get bail?",
     "ground_truth": "47. (2) Where a police officer arrests without warrant any person other than a person accused of a non-bailable offence, he shall inform the person arrested that he is entitled to be released on bail and that he may arrange for sureties on his behalf.",
-    "relevant_sections": [
-      "BNSS Section 47"
-    ],
+    "relevant_sections": ["BNSS Section 47"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Can a rape trial be conducted online or through video conference in India now?",
     "ground_truth": "346. (1) In every inquiry or trial the proceedings shall be continued from day-to-day basis until all the witnesses in attendance have been examined, unless the Court finds the adjournment of the same beyond the following day to be necessary for reasons to be recorded: Provided that when the inquiry or trial relates to an offence under section 64, section 65, section 66, section 67, section 68, section 70 or section 71 of the Bharatiya Nyaya Sanhita, 2023 the inquiry or trial shall be completed within a period of two months from the date of filing of the chargesheet.",
-    "relevant_sections": [
-      "BNSS Section 346"
-    ],
+    "relevant_sections": ["BNSS Section 346"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "How quickly must a rape investigation be completed?",
     "ground_truth": "193. (2) The investigation in relation to an offence under sections 64, 65, 66, 67, 68, 70, 71 of the Bharatiya Nyaya Sanhita, 2023 or under sections 4, 6, 8 or section 10 of the Protection of Children from Sexual Offences Act, 2012 shall be completed within two months from the date on which the information was recorded by the officer in charge of the police station.",
-    "relevant_sections": [
-      "BNSS Section 193"
-    ],
+    "relevant_sections": ["BNSS Section 193"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is the victim compensation scheme under the new criminal procedure law?",
     "ground_truth": "396. (1) Every State Government in co-ordination with the Central Government shall prepare a scheme for providing funds for the purpose of compensation to the victim or his dependents who have suffered loss or injury as a result of the crime and who require rehabilitation. (2) Whenever a recommendation is made by the Court for compensation, the District Legal Service Authority or the State Legal Service Authority, as the case may be, shall decide the quantum of compensation to be awarded under the scheme referred to in sub-section (1).",
-    "relevant_sections": [
-      "BNSS Section 396"
-    ],
+    "relevant_sections": ["BNSS Section 396"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What cases can be tried summarily by a Magistrate in India?",
     "ground_truth": "283. (1) Notwithstanding anything contained in this Sanhita—(a) any Chief Judicial Magistrate; (b) Magistrate of the first class, shall try in a summary way all or any of the following offences:—(i) theft, under sub-section (2) of section 303, section 305 or section 306 of the Bharatiya Nyaya Sanhita, 2023 where the value of the property stolen does not exceed twenty thousand rupees; (ii) receiving or retaining stolen property, under sub-section (2) of section 317 of the Bharatiya Nyaya Sanhita, 2023, where the value of the property does not exceed twenty thousand rupees; (iii) assisting in the concealment or disposal of stolen property under sub-section (5) of section 317 of the Bharatiya Nyaya Sanhita, 2023, where the value of such property does not exceed twenty thousand rupees;",
-    "relevant_sections": [
-      "BNSS Section 283"
-    ],
+    "relevant_sections": ["BNSS Section 283"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Can anticipatory bail be given if the accusation involves rape of a minor?",
     "ground_truth": "482. (4) Nothing in this section shall apply to any case involving the arrest of any person on accusation of having committed an offence under section 65 and sub-section (2) of section 70 of the Bharatiya Nyaya Sanhita, 2023.",
-    "relevant_sections": [
-      "BNSS Section 482"
-    ],
+    "relevant_sections": ["BNSS Section 482"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "How has the FIR process changed under BNSS compared to the old CrPC — can FIR now be registered electronically?",
-    "ground_truth": "173. (1) Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is committed, may be given orally or by electronic communication to an officer in charge of a police station, and if given—(i) orally, it shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it; (ii) by electronic communication, it shall be taken on record by him on being signed within three days by the person giving it.",
-    "relevant_sections": [
-      "BNSS Section 173",
-      "CrPC Section 154"
-    ],
+    "ground_truth": "[CrPC Section 154(1):] Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it, and the substance thereof shall be entered in a book to be kept by such officer in such form as the State Government may prescribe in this behalf. [BNSS Section 173(1):] Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is committed, may be given orally or by electronic communication to an officer in charge of a police station, and if given—(i) orally, it shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it; (ii) by electronic communication, it shall be taken on record by him on being signed within three days by the person giving it, and the substance thereof shall be entered in a book to be kept by such officer in such form as the State Government may by rules prescribe in this behalf. [Key differences: BNSS adds (a) zero-jurisdiction FIR — information can be given irrespective of the area where the offence was committed; (b) electronic communication as a new mode of FIR registration.]",
+    "relevant_sections": ["BNSS Section 173", "CrPC Section 154"],
     "query_type": "comparison",
-    "source_act": [
-      "BNSS",
-      "CrPC"
-    ]
+    "source_act": ["BNSS", "CrPC"]
   },
   {
     "question": "What is a judgment's time limit for pronouncement under the BNSS?",
     "ground_truth": "392. (1) The judgment in every trial in any Criminal Court of original jurisdiction shall be pronounced in open Court by the presiding officer immediately after the termination of the trial or at some subsequent time not later than forty-five days of which notice shall be given to the parties or their advocates.",
-    "relevant_sections": [
-      "BNSS Section 392"
-    ],
+    "relevant_sections": ["BNSS Section 392"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is the difference between BNSS and CrPC regarding police custody and bail — has the detention period changed?",
-    "ground_truth": "187. (3) The Magistrate may authorise the detention of the accused person, beyond the period of fifteen days, if he is satisfied that adequate grounds exist for doing so, but no Magistrate shall authorise the detention of the accused person in custody under this sub-section for a total period exceeding—(i) ninety days, where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of ten years or more; (ii) sixty days, where the investigation relates to any other offence.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "ground_truth": "[CrPC Section 167(2):] The Magistrate to whom an accused person is forwarded under this section may, whether he has or has not jurisdiction to try the case, from time to time, authorise the detention of the accused in such custody as such Magistrate thinks fit, for a term not exceeding fifteen days in the whole; and if he has no jurisdiction to try the case or commit it for trial, and considers further detention unnecessary, he may order the accused to be forwarded to a Magistrate having such jurisdiction: Provided that—(a) the Magistrate may authorise the detention of the accused person, otherwise than in custody of the police, beyond the period of fifteen days; if he is satisfied that adequate grounds exist for doing so, but no Magistrate shall authorise the detention of the accused person in custody under this paragraph for a total period exceeding—(i) ninety days, where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of not less than ten years; (ii) sixty days, where the investigation relates to any other offence. [BNSS Section 187(3):] The Magistrate may authorise the detention of the accused person, beyond the period of fifteen days, if he is satisfied that adequate grounds exist for doing so, but no Magistrate shall authorise the detention of the accused person in custody under this sub-section for a total period exceeding—(i) ninety days, where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of ten years or more; (ii) sixty days, where the investigation relates to any other offence. [The detention periods remain the same; however BNSS Section 187(4) adds a new requirement that the accused must be produced in person before the Magistrate for the first time in police custody, but subsequent judicial custody extens  ions may use audio-video electronic means.]",
+    "relevant_sections": ["BNSS Section 187", "CrPC Section 167"],
     "query_type": "comparison",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Under BNSS, if a woman who is disabled files a rape complaint, are there special provisions for recording her statement?",
     "ground_truth": "173. (a) in the event that the person against whom an offence under section 64, section 65, section 66, section 67, section 68, section 69, section 70, section 71, section 74, section 75, section 76, section 77, section 78, section 79 or section 124 of the Bharatiya Nyaya Sanhita, 2023 is alleged to have been committed or attempted, is temporarily or permanently mentally or physically disabled, then such information shall be recorded by a police officer, at the residence of the person seeking to report such offence or at a convenient place of such person's choice, in the presence of an interpreter or a special educator, as the case may be; (b) the recording of such information shall be videographed.",
-    "relevant_sections": [
-      "BNSS Section 173"
-    ],
+    "relevant_sections": ["BNSS Section 173"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Can the accused be produced before a Magistrate via video call under BNSS?",
     "ground_truth": "187. (4) No Magistrate shall authorise detention of the accused in custody of the police under this section unless the accused is produced before him in person for the first time and subsequently every time till the accused remains in the custody of the police, but the Magistrate may extend further detention in judicial custody on production of the accused either in person or through the audio-video electronic means.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "relevant_sections": ["BNSS Section 187"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What if a child is arrested — can they be released on bail even for a non-bailable offence?",
     "ground_truth": "480. Provided that the Court may direct that a person referred to in clause (i) or clause (ii) be released on bail if such person is a child or is a woman or is sick or infirm.",
-    "relevant_sections": [
-      "BNSS Section 480"
-    ],
+    "relevant_sections": ["BNSS Section 480"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "How has the definition of 'electronic communication' changed in the new procedural code?",
     "ground_truth": "2. (i) \"electronic communication\" means the communication of any written, verbal, pictorial information or video content transmitted or transferred (whether from one person to another or from one device to another or from a person to a device or from a device to a person) by means of an electronic device including a telephone, mobile phone, or other wireless telecommunication device, or a computer, or audio-video player or camera or any other electronic device or electronic form as may be specified by notification, by the Central Government;",
-    "relevant_sections": [
-      "BNSS Section 2"
-    ],
+    "relevant_sections": ["BNSS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Is a confession made to a police officer admissible as evidence in India?",
     "ground_truth": "23. (1) No confession made to a police officer shall be proved as against a person accused of any offence. (2) No confession made by any person while he is in the custody of a police officer, unless it is made in the immediate presence of a Magistrate shall be proved against him: Provided that when any fact is deposed to as discovered in consequence of information received from a person accused of any offence, in the custody of a police officer, so much of such information, whether it amounts to a confession or not, as relates distinctly to the fact discovered, may be proved.",
-    "relevant_sections": [
-      "BSA Section 23"
-    ],
+    "relevant_sections": ["BSA Section 23"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What is a 'dying declaration' and is it admissible as evidence even without cross-examination?",
     "ground_truth": "26. Statements, written or verbal, of relevant facts made by a person who is dead, or who cannot be found, or who has become incapable of giving evidence, or whose attendance cannot be procured without an amount of delay or expense which under the circumstances of the case appears to the Court unreasonable, are themselves relevant facts in the following cases, namely:—(a) when the statement is made by a person as to the cause of his death, or as to any of the circumstances of the transaction which resulted in his death, in cases in which the cause of that person's death comes into question. Such statements are relevant whether the person who made them was or was not, at the time when they were made, under expectation of death, and whatever may be the nature of the proceeding in which the cause of his death comes into question.",
-    "relevant_sections": [
-      "BSA Section 26"
-    ],
+    "relevant_sections": ["BSA Section 26"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "How is a confession obtained by threat or coercion treated under Indian evidence law?",
     "ground_truth": "22. A confession made by an accused person is irrelevant in a criminal proceeding, if the making of the confession appears to the Court to have been caused by any inducement, threat, coercion or promise having reference to the charge against the accused person, proceeding from a person in authority and sufficient, in the opinion of the Court, to give the accused person grounds which would appear to him reasonable for supposing that by making it he would gain any advantage or avoid any evil of a temporal nature in reference to the proceedings against him.",
-    "relevant_sections": [
-      "BSA Section 22"
-    ],
+    "relevant_sections": ["BSA Section 22"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "Are WhatsApp messages and emails admissible as evidence in Indian courts?",
     "ground_truth": "63. (1) Notwithstanding anything contained in this Adhiniyam, any information contained in an electronic record which is printed on paper, stored, recorded or copied in optical or magnetic media or semiconductor memory which is produced by a computer or any communication device or otherwise stored, recorded or copied in any electronic form (hereinafter referred to as the computer output) shall be deemed to be also a document, if the conditions mentioned in this section are satisfied in relation to the information and computer in question and shall be admissible in any proceedings, without further proof or production of the original, as evidence or any contents of the original or of any fact stated therein of which direct evidence would be admissible.",
-    "relevant_sections": [
-      "BSA Section 63"
-    ],
+    "relevant_sections": ["BSA Section 63"],
     "query_type": "procedural",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What are the conditions for a computer-generated document to be admissible as evidence?",
     "ground_truth": "63. (2) The conditions referred to in sub-section (1) in respect of a computer output shall be the following, namely:—(a) the computer output containing the information was produced by the computer or communication device during the period over which the computer or communication device was used regularly to create, store or process information for the purposes of any activity regularly carried on over that period by the person having lawful control over the use of the computer or communication device; (b) during the said period, information of the kind contained in the electronic record or of the kind from which the information so contained is derived was regularly fed into the computer or communication device in the ordinary course of the said activities; (c) throughout the material part of the said period, the computer or communication device was operating properly or, if not, then in respect of any period in which it was not operating properly or was out of operation during that part of the period, was not such as to affect the electronic record or the accuracy of its contents; and (d) the information contained in the electronic record reproduces or is derived from such information fed into the computer or communication device in the ordinary course of the said activities.",
-    "relevant_sections": [
-      "BSA Section 63"
-    ],
+    "relevant_sections": ["BSA Section 63"],
     "query_type": "procedural",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "When can an expert's opinion be used as evidence in court?",
     "ground_truth": "39. Opinions of experts.—(1) When the Court has to form an opinion upon a point of foreign law or of science or art, or any other field, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science or art, or any other field, or in questions as to identity of handwriting or finger impressions are relevant facts and such persons are called experts.",
-    "relevant_sections": [
-      "BSA Section 39"
-    ],
+    "relevant_sections": ["BSA Section 39"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What is the difference between 'proved', 'disproved', and 'not proved' under the Bharatiya Sakshya Adhiniyam?",
     "ground_truth": "2. (b) \"conclusive proof\" means when one fact is declared by this Adhiniyam to be conclusive proof of another, the Court shall, on proof of the one fact, regard the other as proved, and shall not allow evidence to be given for the purpose of disproving it; (c) \"disproved\" in relation to a fact, means when, after considering the matters before it, the Court either believes that it does not exist, or considers its non-existence so probable that a prudent man ought, under the circumstances of the particular case, to act upon the supposition that it does not exist; (i) \"not proved\".—A fact is said to be not proved when it is neither proved nor disproved; (j) \"proved\".—A fact is said to be proved when, after considering the matters before it, the Court either believes it to exist, or considers its existence so probable that a prudent man ought, under the circumstances of the particular case, to act upon the supposition that it exists.",
-    "relevant_sections": [
-      "BSA Section 2"
-    ],
+    "relevant_sections": ["BSA Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "Does BSA allow digital signatures as proof of documents?",
     "ground_truth": "39. (2) When in a proceeding, the court has to form an opinion on any matter relating to any information transmitted or stored in any computer resource or any other electronic or digital form, the opinion of the Examiner of Electronic Evidence referred to in section 79A of the Information Technology Act, 2000 (21 of 2000), is a relevant fact. Explanation.—For the purposes of this sub-section, an Examiner of Electronic Evidence shall be an expert.",
-    "relevant_sections": [
-      "BSA Section 39"
-    ],
+    "relevant_sections": ["BSA Section 39"],
     "query_type": "procedural",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What does BSA say about evidence of prior sexual history of rape victims?",
-    "ground_truth": "48. Evidence of character or previous sexual experience not relevant in certain cases.",
-    "relevant_sections": [
-      "BSA Section 48"
-    ],
+    "ground_truth": "48. In a prosecution for an offence under section 63, section 65, section 66, section 67, section 68 or section 70 of the Bharatiya Nyaya Sanhita, 2023 or for attempt to commit any such offence, where the question of consent is in issue, evidence of the character of the victim or of such victim's previous sexual experience with any person shall not be relevant on the issue of such consent or the quality of consent.",
+    "relevant_sections": ["BSA Section 48"],
     "query_type": "edge_case",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What happens if a co-accused confesses and implicates other accused persons?",
     "ground_truth": "24. When more persons than one are being tried jointly for the same offence, and a confession made by one of such persons affecting himself and some other of such persons is proved, the Court may take into consideration such confession as against such other person as well as against the person who makes such confession.",
-    "relevant_sections": [
-      "BSA Section 24"
-    ],
+    "relevant_sections": ["BSA Section 24"],
     "query_type": "edge_case",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What is 'evidence' defined as under the Bharatiya Sakshya Adhiniyam?",
     "ground_truth": "2. (e) \"evidence\" means and includes—(i) all statements including statements given electronically which the Court permits or requires to be made before it by witnesses in relation to matters of fact under inquiry and such statements are called oral evidence; (ii) all documents including electronic or digital records produced for the inspection of the Court and such documents are called documentary evidence.",
-    "relevant_sections": [
-      "BSA Section 2"
-    ],
+    "relevant_sections": ["BSA Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "What changes did BSA make to the IEA when it comes to confessions made to police?",
     "ground_truth": "23. (1) No confession made to a police officer shall be proved as against a person accused of any offence. (2) No confession made by any person while he is in the custody of a police officer, unless it is made in the immediate presence of a Magistrate shall be proved against him.",
-    "relevant_sections": [
-      "BSA Section 23",
-      "IEA Section 25"
-    ],
+    "relevant_sections": ["BSA Section 23", "IEA Section 25"],
     "query_type": "comparison",
-    "source_act": [
-      "BSA",
-      "IEA"
-    ]
+    "source_act": ["BSA", "IEA"]
   },
   {
     "question": "How has BSA expanded the definition of 'document' compared to the old IEA?",
     "ground_truth": "2. (d) \"document\" means any matter expressed or described or otherwise recorded upon any substance by means of letters, figures or marks or any other means or by more than one of those means, intended to be used, or which may be used, for the purpose of recording that matter and includes electronic and digital records. Illustrations. (vi) An electronic record on emails, server logs, documents on computers, laptop or smartphone, messages, websites, locational evidence and voice mail messages stored on digital devices are documents.",
-    "relevant_sections": [
-      "BSA Section 2"
-    ],
+    "relevant_sections": ["BSA Section 2"],
     "query_type": "comparison",
-    "source_act": [
-      "BSA",
-      "IEA"
-    ]
+    "source_act": ["BSA", "IEA"]
   },
   {
     "question": "What was the IPC definition of murder and how does it differ from the BNS?",
-    "ground_truth": "300. Murder.--Except in the cases hereinafter excepted, culpable homicide is murder, if the act by which the death is caused is done with the intention of causing death, or-2ndly.-If it is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused. or-3rdly.-If it is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death, or-4thly.-If the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.",
-    "relevant_sections": [
-      "IPC Section 300"
-    ],
+    "ground_truth": "[IPC Section 300:] Murder.—Except in the cases hereinafter excepted, culpable homicide is murder, if the act by which the death is caused is done with the intention of causing death, or—2ndly.—If it is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused, or—3rdly.—If it is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death, or—4thly.—If the person committing the act knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid. [BNS Section 101:] Except in the cases hereinafter excepted, culpable homicide is murder,—(a) if the act by which the death is caused is done with the intention of causing death; or (b) if the act by which the death is caused is done with the intention of causing such bodily injury as the offender knows to be likely to cause the death of the person to whom the harm is caused; or (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death; or (d) if the person committing the act by which the death is caused, knows that it is so imminently dangerous that it must, in all probability, cause death, or such bodily injury as is likely to cause death, and commits such act without any excuse for incurring the risk of causing death or such injury as aforesaid.",
+    "relevant_sections": ["IPC Section 300", "BNS Section 101"],
     "query_type": "definition",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "What was the punishment for murder under the old IPC?",
     "ground_truth": "302. Punishment for murder.--Whoever commits murder shall be punished with death, or imprisonment for life, and shall also be liable to fine.",
-    "relevant_sections": [
-      "IPC Section 302"
-    ],
+    "relevant_sections": ["IPC Section 302"],
     "query_type": "punishment",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "How did the IPC define rape before the new BNS?",
-    "ground_truth": "375. Rape.--A man is said to commit \"rape\" who, except in the case hereinafter excepted, has sexual intercourse with a woman under circumstances falling under any of the six following descriptions:—First.-Against her will. Secondly.-Without her consent. Thirdly.-With her consent, when her consent has been obtained by putting her or any person in whom she is interested in fear of death or of hurt. Fourthly.-With her consent, when the man knows that he is not her husband, and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married. Fifthly.-With her consent, when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent. Sixthly.-With or without her consent, when she is under sixteen years of age. Explanation.-Penetration is sufficient to constitute the sexual intercourse necessary to the offence of rape. Exception.-Sexual intercourse by a man with his own wife, the wife not being under fifteen years of age, is not rape.",
-    "relevant_sections": [
-      "IPC Section 375"
-    ],
+    "ground_truth": "[IPC Section 375:] A man is said to commit \"rape\" who, except in the case hereinafter excepted, has sexual intercourse with a woman under circumstances falling under any of the six following descriptions:—First.—Against her will. Secondly.—Without her consent. Thirdly.—With her consent, when her consent has been obtained by putting her or any person in whom she is interested in fear of death or of hurt. Fourthly.—With her consent, when the man knows that he is not her husband, and that her consent is given because she believes that he is another man to whom she is or believes herself to be lawfully married. Fifthly.—With her consent, when, at the time of giving such consent, by reason of unsoundness of mind or intoxication or the administration by him personally or through another of any stupefying or unwholesome substance, she is unable to understand the nature and consequences of that to which she gives consent. Sixthly.—With or without her consent, when she is under sixteen years of age. Explanation.—Penetration is sufficient to constitute the sexual intercourse necessary to the offence of rape. Exception.—Sexual intercourse by a man with his own wife, the wife not being under fifteen years of age, is not rape. [BNS Section 63:] A man is said to commit \"rape\" if he—(a) penetrates his penis, to any extent, into the vagina, mouth, urethra or anus of a woman or makes her to do so with him or any other person; or (b) inserts, to any extent, any object or a part of the body, not being the penis, into the vagina, the urethra or anus of a woman or makes her to do so with him or any other person; or (c) manipulates any part of the body of a woman so as to cause penetration into the vagina, urethra, anus or any part of body of such woman or makes her to do so with him or any other person; or (d) applies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person, under the circumstances falling under any of the following seven descriptions:—(i) against her will; (ii) without her consent; ...(vi) with or without her consent, when she is under eighteen years of age; (vii) when she is unable to communicate consent. Exception 2.—Sexual intercourse or sexual acts by a man with his own wife, the wife not being under eighteen years of age, is not rape. [Key differences: BNS expanded the physical acts constituting rape beyond penile-vaginal intercourse; raised age of consent from 16 to 18; raised marital rape exception from 15 to 18 years; added inability to communicate consent as a new circumstance.]",
+    "relevant_sections": ["IPC Section 375", "BNS Section 63"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "What was the IPC provision on sedition and how does it compare to the new BNS?",
-    "ground_truth": "124A. Sedition.--Whoever by words, either spoken or written, or by signs, or by visible representation, or otherwise, brings or attempts to bring into hatred or contempt, or excites or attempts to excite disaffection towards, the Government established by law in India, shall be punished with imprisonment for life, to which fine may be added, or with imprisonment which may extend to three years, to which fine may be added, or with fine. Explanation 1.-The expression \"disaffection\" includes disloyalty and all feelings of enmity. Explanation 2.-Comments expressing disapprobation of the measures of the Government with a view to obtain their alteration by lawful means without exciting or attempting to excite any feelings of disaffection, do not constitute an offence under this section.",
-    "relevant_sections": [
-      "IPC Section 124A"
-    ],
+    "ground_truth": "[IPC Section 124A — Sedition:] Whoever, by words, either spoken or written, or by signs, or by visible representation, or otherwise, brings or attempts to bring into hatred or contempt, or excites or attempts to excite disaffection towards, the Government established by law in India, shall be punished with imprisonment for life, to which fine may be added, or with imprisonment which may extend to three years, to which fine may be added, or with fine. Explanation 1.—The expression \"disaffection\" includes disloyalty and all feelings of enmity. Explanation 2.—Comments expressing disapprobation of the measures of the Government with a view to obtain their alteration by lawful means without exciting or attempting to excite any feelings of disaffection, do not constitute an offence under this section. [BNS Section 152 — Act endangering sovereignty, unity and integrity of India:] Whoever, purposely or knowingly, by words, either spoken or written, or by signs, or by visible representation, or by electronic communication or by use of financial mean, or otherwise, excites or attempts to excite, secession or armed rebellion or subversive activities, or encourages feelings of separatist activities or endangers sovereignty or unity and integrity of India; or indulges in or commits any such act shall be punished with imprisonment for life or with imprisonment which may extend to seven years, and shall also be liable to fine. Explanation.—Comments expressing disapprobation of the measures, or administrative or other action of the Government with a view to obtain their alteration by lawful means without exciting or attempting to excite the activities referred to in this section do not constitute an offence under this section.",
+    "relevant_sections": ["IPC Section 124A", "BNS Section 152"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "What was the IPC punishment for cheating as compared to BNS?",
-    "ground_truth": "420. Cheating and dishonestly inducing delivery of property.--Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "IPC Section 420"
-    ],
+    "ground_truth": "[IPC Section 420:] Cheating and dishonestly inducing delivery of property.—Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine. [BNS Section 318(2):] Whoever cheats shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both. (3) Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction to which the cheating relates, he was bound, either by law, or by a legal contract, to protect, shall be punished with imprisonment of either description for a term which may extend to five years, or with fine, or with both. (4) Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.",
+    "relevant_sections": ["IPC Section 420", "BNS Section 318(2)"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "What was the punishment for culpable homicide not amounting to murder under the old IPC?",
-    "ground_truth": "304. Punishment for culpable homicide not amounting to murder.--Whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death. or of causing such bodily injury as is likely to cause death.",
-    "relevant_sections": [
-      "IPC Section 304"
-    ],
+    "ground_truth": "[IPC Section 304:] Punishment for culpable homicide not amounting to murder.—Whoever commits culpable homicide not amounting to murder shall be punished with imprisonment for life, or imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years, or with fine, or with both, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. [BNS Section 105:] Whoever commits culpable homicide not amounting to murder, shall be punished with imprisonment for life, or imprisonment of either description for a term which shall not be less than five years but which may extend to ten years, and shall also be liable to fine, if the act by which the death is caused is done with the intention of causing death, or of causing such bodily injury as is likely to cause death; or with imprisonment of either description for a term which may extend to ten years and with fine, if the act is done with the knowledge that it is likely to cause death, but without any intention to cause death, or to cause such bodily injury as is likely to cause death. [Key difference: BNS introduces a minimum sentence of five years for intentional culpable homicide, which IPC did not mandate.]",
+    "relevant_sections": ["IPC Section 304", "BNS Section 105"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "How did IPC handle a convicted life prisoner who commits murder again — has BNS changed this?",
-    "ground_truth": "303. Punishment for murder by life-convict.--Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death.",
-    "relevant_sections": [
-      "IPC Section 303"
-    ],
+    "ground_truth": "[IPC Section 303:] Punishment for murder by life-convict.—Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death. [BNS Section 104:] Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person's natural life. [Key difference: IPC 303 made death the only punishment (mandatory death penalty), which the Supreme Court struck down in Mithu v. State of Punjab (1983) as unconstitutional. BNS 104 rectifies this by giving courts discretion between death and natural life imprisonment.]",
+    "relevant_sections": ["IPC Section 303", "BNS Section 104"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "Under the old IPC, what was the age of consent for rape exception in marital rape?",
-    "ground_truth": "375. Exception.-Sexual intercourse by a man with his own wife, the wife not being under fifteen years of age, is not rape.",
-    "relevant_sections": [
-      "IPC Section 375"
-    ],
+    "ground_truth": "[IPC Section 375 — Exception:] Sexual intercourse by a man with his own wife, the wife not being under fifteen years of age, is not rape. [BNS Section 63 — Exception 2:] Sexual intercourse or sexual acts by a man with his own wife, the wife not being under eighteen years of age, is not rape. [Key difference: IPC set the marital rape exception age at 15 years; BNS raised it to 18 years, aligning with the age of majority and the POCSO Act.]",
+    "relevant_sections": ["IPC Section 375", "BNS Section 63"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "What was the IPC punishment for rape under the old law before BNS?",
-    "ground_truth": "376. Punishment for rape.--(1) Whoever, except in the cases provided for by sub-section (2), commits rape shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may be for life or for a term which may extend to ten years and shall also be liable to fine unless the woman raped is his own wife and is not under twelve years of age, in which case, he shall be punished with imprisonment of either description for a term which may extend to two years or with fine or with both.",
-    "relevant_sections": [
-      "IPC Section 376"
-    ],
+    "ground_truth": "[IPC Section 376(1):] Whoever, except in the cases provided for by sub-section (2), commits rape shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may be for life or for a term which may extend to ten years and shall also be liable to fine unless the woman raped is his own wife and is not under twelve years of age, in which case, he shall be punished with imprisonment of either description for a term which may extend to two years or with fine or with both. [BNS Section 64(1):] Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. [Key difference: BNS raised the minimum punishment from 7 years to 10 years rigorous imprisonment, and removed the reduced sentence exception for marital rape of wife above 12 years.]",
+    "relevant_sections": ["IPC Section 376", "BNS Section 64(1)"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "Did IPC have a provision for organised crime like the BNS section 111?",
-    "ground_truth": "111. (1) Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime.",
-    "relevant_sections": [
-      "BNS Section 111"
-    ],
+    "ground_truth": "[IPC:] The IPC did not contain any standalone provision defining or punishing 'organised crime' as a distinct offence. Organised crime was addressed through special state enactments such as the Maharashtra Control of Organised Crime Act, 1999 (MCOCA) and central laws like UAPA and TADA (now repealed). General IPC provisions on criminal conspiracy (Section 120A-120B), dacoity (Section 391-400), and abetment applied to organised criminal activity but lacked the comprehensive syndicate-based framework. [BNS Section 111(1):] Any continuing unlawful activity including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offence, cyber-crimes, trafficking of persons, drugs, weapons or illicit goods or services, human trafficking for prostitution or ransom, by any person or a group of persons acting in concert, singly or jointly, either as a member of an organised crime syndicate or on behalf of such syndicate, by use of violence, threat of violence, intimidation, coercion, or by any other unlawful means to obtain direct or indirect material benefit including a financial benefit, shall constitute organised crime. [BNS Section 111(2):] Whoever commits organised crime shall,—(i) if such offence has resulted in the death of any person, be punishable with death or imprisonment for life and shall also be liable to fine of not less than ten lakh rupees; (ii) in any other case, be punishable with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine of not less than five lakh rupees.",
+    "relevant_sections": ["BNS Section 111", "IPC"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "What was the minimum punishment for rape in IPC versus BNS?",
-    "ground_truth": "376. (1) Whoever, except in the cases provided for by sub-section (2), commits rape shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may be for life or for a term which may extend to ten years.",
-    "relevant_sections": [
-      "IPC Section 376"
-    ],
+    "ground_truth": "[IPC Section 376(1) — minimum 7 years:] Whoever, except in the cases provided for by sub-section (2), commits rape shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may be for life or for a term which may extend to ten years and shall also be liable to fine. [BNS Section 64(1) — minimum 10 years:] Whoever, except in the cases provided for in sub-section (2), commits rape, shall be punished with rigorous imprisonment of either description for a term which shall not be less than ten years, but which may extend to imprisonment for life, and shall also be liable to fine. [Key difference: Minimum increased from 7 years (IPC) to 10 years rigorous imprisonment (BNS).]",
+    "relevant_sections": ["IPC Section 376", "BNS Section 64"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC"
-    ]
+    "source_act": ["IPC"]
   },
   {
     "question": "Does IPC have community service as a punishment — and how is BNS different?",
-    "ground_truth": "4. The punishments to which offenders are liable under the provisions of this Sanhita are—(a) Death; (b) Imprisonment for life; (c) Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; (d) Forfeiture of property; (e) Fine; (f) Community Service.",
-    "relevant_sections": [
-      "BNS Section 4"
-    ],
+    "ground_truth": "[IPC Section 53 — Punishments:] The punishments to which offenders are liable under the provisions of this Code are—First.—Death; Secondly.—Imprisonment for life; Thirdly.—[Omitted by Act 17 of 1949]; Fourthly.—Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; Fifthly.—Forfeiture of property; Sixthly.—Fine. [BNS Section 4 — Punishments:] The punishments to which offenders are liable under the provisions of this Sanhita are—(a) Death; (b) Imprisonment for life; (c) Imprisonment, which is of two descriptions, namely:—(1) Rigorous, that is, with hard labour; (2) Simple; (d) Forfeiture of property; (e) Fine; (f) Community Service. [IPC Section 53 contained no provision for community service. BNS Section 4(f) introduces community service as a new category of punishment for the first time in Indian criminal law.]",
+    "relevant_sections": ["BNS Section 4", "IPC Section 53"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "Under IPC, what was the punishment for abetting suicide?",
-    "ground_truth": "108. If any person commits suicide, whoever abets the commission of such suicide, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 108"
-    ],
+    "ground_truth": "108. If any person commits suicide, whoever abets the commission of such suicide, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine. IPC Section 306. Abetment of suicide.—If any person commits suicide, whoever abets the commission of such suicide, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
+    "relevant_sections": ["BNS Section 108"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "What happens under IPC if a person under life sentence commits murder again — how does BNS differ on punishment?",
     "ground_truth": "303. Punishment for murder by life-convict.--Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death. [BNS Section 104 provides:] 104. Whoever, being under sentence of imprisonment for life, commits murder, shall be punished with death or with imprisonment for life, which shall mean the remainder of that person's natural life.",
-    "relevant_sections": [
-      "IPC Section 303",
-      "BNS Section 104"
-    ],
+    "relevant_sections": ["IPC Section 303", "BNS Section 104"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "How did CrPC define information in a cognizable case compared to BNSS?",
     "ground_truth": "154. Information in cognizable cases.—(1) Every information relating to the commission of a cognizable offence, if given orally to an officer in charge of a police station, shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it, and the substance thereof shall be entered in a book to be kept by such officer in such form as the State Government may prescribe in this behalf.",
-    "relevant_sections": [
-      "CrPC Section 154"
-    ],
+    "relevant_sections": ["CrPC Section 154"],
     "query_type": "definition",
-    "source_act": [
-      "CrPC"
-    ]
+    "source_act": ["CrPC"]
   },
   {
     "question": "What were the bail provisions in CrPC for non-bailable offences?",
     "ground_truth": "437. When bail may be taken in case of non-bailable offence.—(1) When any person accused of, or suspected of, the commission of any non-bailable offence is arrested or detained without warrant by an officer in charge of a police station or appears or is brought before a Court other than the High Court or Court of session, he may be released on bail, but—(i) such person shall not be so released if there appear reasonable grounds for believing that he has been guilty of an offence punishable with death or imprisonment for life; (ii) such person shall not be so released if such offence is a cognizable offence and he had been previously convicted of an offence punishable with death, imprisonment for life or imprisonment for seven years or more.",
-    "relevant_sections": [
-      "CrPC Section 437"
-    ],
+    "relevant_sections": ["CrPC Section 437"],
     "query_type": "definition",
-    "source_act": [
-      "CrPC"
-    ]
+    "source_act": ["CrPC"]
   },
   {
     "question": "What was anticipatory bail under CrPC section 438?",
     "ground_truth": "438. Direction for grant of bail to person apprehending arrest.—(1) When any person has reason to believe that he may be arrested on an accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction under this section; and that Court may, if it thinks fit, direct that in the event of such arrest, he shall be released on bail.",
-    "relevant_sections": [
-      "CrPC Section 438"
-    ],
+    "relevant_sections": ["CrPC Section 438"],
     "query_type": "definition",
-    "source_act": [
-      "CrPC"
-    ]
+    "source_act": ["CrPC"]
   },
   {
     "question": "How has anticipatory bail changed from CrPC to BNSS?",
     "ground_truth": "438. Direction for grant of bail to person apprehending arrest.—(1) When any person has reason to believe that he may be arrested on an accusation of having committed a non-bailable offence, he may apply to the High Court or the Court of Session for a direction under this section; and that Court may, if it thinks fit, direct that in the event of such arrest, he shall be released on bail. (4) Nothing in this section shall apply to any case involving the arrest of any person on accusation of having committed an offence under sub-section (3) of section 376 or section 376AB or section 376DA or section 376DB of the Indian Penal Code (45 of 1860). [BNSS 482(4)]: Nothing in this section shall apply to any case involving the arrest of any person on accusation of having committed an offence under section 65 and sub-section (2) of section 70 of the Bharatiya Nyaya Sanhita, 2023.",
-    "relevant_sections": [
-      "CrPC Section 438",
-      "BNSS Section 482"
-    ],
+    "relevant_sections": ["CrPC Section 438", "BNSS Section 482"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "Under CrPC, when was the age of exception for bail — 'under the age of sixteen years'? How has BNSS changed this?",
-    "ground_truth": "437. Provided that the Court may direct that a person referred to in clause (i) or clause (ii) be released on bail if such person is under the age of sixteen years or is a woman or is sick or infirm.",
-    "relevant_sections": [
-      "CrPC Section 437"
-    ],
+    "ground_truth": "[CrPC Section 437 — Proviso:] Provided that the Court may direct that a person referred to in clause (i) or clause (ii) be released on bail if such person is under the age of sixteen years or is a woman or is sick or infirm. [BNSS Section 480 — Proviso:] Provided that the Court may direct that a person referred to in clause (i) or clause (ii) be released on bail if such person is a child or is a woman or is sick or infirm. [Key difference: CrPC used the threshold of 'under the age of sixteen years'; BNSS replaces this with 'child' which under BNS Section 2(3) means any person below the age of eighteen years — effectively raising the age threshold for this bail entitlement from 16 to 18 years, consistent with the age of majority.]",
+    "relevant_sections": ["CrPC Section 437", "BNSS Section 480"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC"
-    ]
+    "source_act": ["CrPC"]
   },
   {
     "question": "Did CrPC allow video conferencing for producing the accused before a magistrate?",
-    "ground_truth": "187. (4) No Magistrate shall authorise detention of the accused in custody of the police under this section unless the accused is produced before him in person for the first time and subsequently every time till the accused remains in the custody of the police, but the Magistrate may extend further detention in judicial custody on production of the accused either in person or through the audio-video electronic means.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "ground_truth": "[CrPC Section 167:] The CrPC did not contain an explicit provision permitting production of the accused before a Magistrate via video conferencing or audio-video electronic means for purposes of extending remand. The accused was required to be physically produced before the Magistrate. (Some High Courts permitted video conferencing under inherent powers or under IT Act, but CrPC had no express provision.) [BNSS Section 187(4):] No Magistrate shall authorise detention of the accused in custody of the police under this section unless the accused is produced before him in person for the first time and subsequently every time till the accused remains in the custody of the police, but the Magistrate may extend further detention in judicial custody on production of the accused either in person or through the audio-video electronic means. [Key difference: BNSS expressly allows audio-video electronic production for judicial custody remand extensions (but not for the first appearance or for police custody extensions, which still require physical production).]",
+    "relevant_sections": ["BNSS Section 187", "CrPC Section 167"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "What was the CrPC provision for investigation timeline and has it changed under BNSS?",
-    "ground_truth": "193. (1) Every investigation under this Chapter shall be completed without unnecessary delay. (2) The investigation in relation to an offence under sections 64, 65, 66, 67, 68, 70, 71 of the Bharatiya Nyaya Sanhita, 2023 or under sections 4, 6, 8 or section 10 of the Protection of Children from Sexual Offences Act, 2012 shall be completed within two months from the date on which the information was recorded by the officer in charge of the police station.",
-    "relevant_sections": [
-      "BNSS Section 193"
-    ],
+    "ground_truth": "[CrPC Section 173(1):] Every investigation under this Chapter shall be completed without unnecessary delay. [CrPC had no specific statutory time limit for completing investigations in sexual offence cases; the general standard was 'without unnecessary delay.'] [BNSS Section 193(1):] Every investigation under this Chapter shall be completed without unnecessary delay. (2) The investigation in relation to an offence under sections 64, 65, 66, 67, 68, 70, 71 of the Bharatiya Nyaya Sanhita, 2023 or under sections 4, 6, 8 or section 10 of the Protection of Children from Sexual Offences Act, 2012 shall be completed within two months from the date on which the information was recorded by the officer in charge of the police station. [Key difference: BNSS introduces a specific mandatory two-month deadline for investigating rape and POCSO offences, which did not exist under CrPC.]",
+    "relevant_sections": ["BNSS Section 193", "CrPC Section 173"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "What are the conditions for granting anticipatory bail under CrPC — can court impose conditions?",
     "ground_truth": "438. (2) When the High Court or the Court of Session makes a direction under sub-section (1), it may include such conditions in such directions in the light of the facts of the particular case, as it may think fit, including—(i) a condition that the person shall make himself available for interrogation by a police officer as and when required; (ii) a condition that the person shall not, directly or indirectly, make any inducement, threat or promise to any person acquainted with the facts of the case so as to dissuade him from disclosing such facts to the Court or to any police officer; (iii) a condition that the person shall not leave India without the previous permission of the Court; (iv) such other condition as may be imposed under sub-section (3) of section 437, as if the bail were granted under that section.",
-    "relevant_sections": [
-      "CrPC Section 438"
-    ],
+    "relevant_sections": ["CrPC Section 438"],
     "query_type": "procedural",
-    "source_act": [
-      "CrPC"
-    ]
+    "source_act": ["CrPC"]
   },
   {
     "question": "What is the CrPC procedure for recording FIR for a sexual assault complaint by a physically disabled woman?",
     "ground_truth": "154. Provided further that—(a) in the event that the person against whom an offence under section 354, section 354A, section 354B, section 354C, section 354D, section 376, section 376A, section 376AB, section 376B, section 376C, section 376D, section 376DA, section 376DB, section 376E or section 509 of the Indian Penal Code (45 of 1860) is alleged to have been committed or attempted, is temporarily or permanently mentally or physically disabled, then such information shall be recorded by a police officer, at the residence of the person seeking to report such offence or at a convenient place of such person's choice, in the presence of an interpreter or a special educator, as the case may be; (b) the recording of such information shall be video graphed.",
-    "relevant_sections": [
-      "CrPC Section 154"
-    ],
+    "relevant_sections": ["CrPC Section 154"],
     "query_type": "procedural",
-    "source_act": [
-      "CrPC"
-    ]
+    "source_act": ["CrPC"]
   },
   {
     "question": "How did the CrPC specify compensation to victims?",
-    "ground_truth": "396. (1) Every State Government in co-ordination with the Central Government shall prepare a scheme for providing funds for the purpose of compensation to the victim or his dependents who have suffered loss or injury as a result of the crime and who require rehabilitation.",
-    "relevant_sections": [
-      "BNSS Section 396"
-    ],
+    "ground_truth": "[CrPC Section 357A(1):] Every State Government in co-ordination with the Central Government shall prepare a scheme for providing funds for the purpose of compensation to the victim or his dependents who have suffered loss or injury as a result of the crime and who require rehabilitation. (2) Whenever a recommendation is made by the Court for compensation, the District Legal Service Authority or the State Legal Service Authority, as the case may be, shall decide the quantum of compensation to be awarded under the scheme referred to in sub-section (1). [BNSS Section 396(1) and (2) replicates CrPC Section 357A with essentially identical language. BNSS additionally adds sub-sections (4) and (5) allowing victims to apply for compensation even where the offender is not identified or no trial takes place.] [The core compensation framework is unchanged from CrPC; BNSS expands it to cover untraced-offender situations.]",
+    "relevant_sections": ["BNSS Section 396", "CrPC Section 357A"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "What were the CrPC provisions for summary trials and have they changed in BNSS?",
-    "ground_truth": "283. (1) Notwithstanding anything contained in this Sanhita—(a) any Chief Judicial Magistrate; (b) Magistrate of the first class, shall try in a summary way all or any of the following offences:—(i) theft, under sub-section (2) of section 303, section 305 or section 306 of the Bharatiya Nyaya Sanhita, 2023 where the value of the property stolen does not exceed twenty thousand rupees.",
-    "relevant_sections": [
-      "BNSS Section 283"
-    ],
+    "ground_truth": "[CrPC Section 260(1):] Notwithstanding anything contained in this Code—(a) any Chief Judicial Magistrate; (b) any Metropolitan Magistrate; (c) any Magistrate of the first class specially empowered in this behalf by the High Court, may, if he thinks fit, try in a summary way all or any of the following offences:—(i) offences not punishable with death, imprisonment for life, or imprisonment for a term exceeding two years; (ii) theft, under section 379, section 380, or section 381 of the Indian Penal Code (45 of 1860), where the value of the property stolen does not exceed two thousand rupees; (iii) receiving or retaining stolen property, under section 411 of the Indian Penal Code (45 of 1860), where the value of the property does not exceed two thousand rupees... [BNSS Section 283(1):] ...shall try in a summary way all or any of the following offences:—(i) theft...where the value of the property stolen does not exceed twenty thousand rupees; (ii) receiving or retaining stolen property...where the value of the property does not exceed twenty thousand rupees. [Key difference: BNSS raised the monetary threshold for summary trial of property offences from two thousand rupees (CrPC) to twenty thousand rupees, reflecting inflation and enabling more cases to be disposed of summarily.]",
+    "relevant_sections": ["BNSS Section 283", "CrPC Section 260"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "How does BNSS deal with a case where a person is absent and cannot understand the proceedings?",
     "ground_truth": "357. If the accused, though not a person of unsound mind, cannot be made to understand the proceedings, the Court may proceed with the inquiry or trial; and, in the case of a Court other than a High Court, if such proceedings result in a conviction, the proceedings shall be forwarded to the High Court with a report of the circumstances of the case, and the High Court shall pass thereon such order as it thinks fit.",
-    "relevant_sections": [
-      "BNSS Section 357"
-    ],
+    "relevant_sections": ["BNSS Section 357"],
     "query_type": "edge_case",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "Can an FIR be filed for a crime that happened in a different police station area?",
     "ground_truth": "173. (1) Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is committed, may be given orally or by electronic communication to an officer in charge of a police station.",
-    "relevant_sections": [
-      "BNSS Section 173"
-    ],
+    "relevant_sections": ["BNSS Section 173"],
     "query_type": "edge_case",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "What was the old IEA rule about confessions made to police?",
     "ground_truth": "25. Confession to police-officer not to be proved.—No confession made to a police-officer, shall be proved as against a person accused of any offence.",
-    "relevant_sections": [
-      "IEA Section 25"
-    ],
+    "relevant_sections": ["IEA Section 25"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Under IEA section 26, can a confession made while in police custody be proved against the accused?",
     "ground_truth": "26. Confession by accused while in custody of police not to be proved against him.—No confession made by any person whilst he is in the custody of a police-officer, unless it be made in the immediate presence of a Magistrate, shall be proved as against such person.",
-    "relevant_sections": [
-      "IEA Section 26"
-    ],
+    "relevant_sections": ["IEA Section 26"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "What was the IEA rule about statements made by people who are dead or unavailable as witnesses?",
-    "ground_truth": "32. Cases in which statement of relevant fact by person who is dead or cannot be found, etc., is relevant. When it relates to cause of death; or is made in course of business; or against interest of maker; or gives opinion as to public right or custom, or matters of general interest; or relates to existence of relationship; or is made in will or deed relating to family affairs.",
-    "relevant_sections": [
-      "IEA Section 32"
-    ],
+    "ground_truth": "32. Statements, written or verbal, of relevant facts made by a person who is dead, or who cannot be found, or who has become incapable of giving evidence, or whose attendance cannot be procured without an amount of delay or expense which, under the circumstances of the case, appears to the Court unreasonable, are themselves relevant facts in the following cases:—(1) When the statement is made by a person as to the cause of his death, or as to any of the circumstances of the transaction which resulted in his death, in cases in which the cause of that person's death comes into question. Such statements are relevant whether the person who made them was or was not, at the time when they were made, under expectation of death, and whatever may be the nature of the proceeding in which the cause of his death comes into question; (2) When the statement was made by such person in the ordinary course of business, and in particular when it consists of any entry or memorandum made by him in books kept in the ordinary course of business, or in the discharge of professional duty; or of an acknowledgement written or signed by him of the receipt of money, goods, securities or property of any kind; or of a document used in commerce written or signed by him; or of the date of a letter or other document usually dated, written or signed by him.",
+    "relevant_sections": ["IEA Section 32"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Who has the burden of proof in a criminal case under the old IEA?",
     "ground_truth": "101. Burden of proof.—Whoever desires any Court to give judgment as to any legal right or liability dependent on the existence of facts which he asserts, must prove that those facts exist. When a person is bound to prove the existence of any fact, it is said that the burden of proof lies on that person.",
-    "relevant_sections": [
-      "IEA Section 101"
-    ],
+    "relevant_sections": ["IEA Section 101"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Under IEA, who must prove the exception in a criminal case — the prosecution or the accused?",
     "ground_truth": "105. Burden of proving that case of accused comes within exceptions.—When a person is accused of any offence, the burden of proving the existence of circumstances bringing the case within any of the General Exceptions in the Indian Penal Code (45 of 1860), or within any special exception or proviso contained in any other part of the same Code, or in any law defining the offence, is upon him, and the Court shall presume the absence of such circumstances.",
-    "relevant_sections": [
-      "IEA Section 105"
-    ],
+    "relevant_sections": ["IEA Section 105"],
     "query_type": "procedural",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "What did IEA say about the burden of proof — on whom does it lie?",
     "ground_truth": "102. On whom burden of proof lies.—The burden of proof in a suit or proceeding lies on that person who would fail if no evidence at all were given on either side.",
-    "relevant_sections": [
-      "IEA Section 102"
-    ],
+    "relevant_sections": ["IEA Section 102"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "How did IEA Section 27 allow some police-obtained information to be used as evidence?",
     "ground_truth": "27. How much of information received from accused may be proved.—Provided that, when any fact is deposed to as discovered in consequence of information received from a person accused of any offence, in the custody of a police-officer, so much of such information, whether it amounts to a confession or not, as relates distinctly to the fact thereby discovered, may be proved.",
-    "relevant_sections": [
-      "IEA Section 27"
-    ],
+    "relevant_sections": ["IEA Section 27"],
     "query_type": "edge_case",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Under IEA, what was the rule about confessions made after the coercion or threat has been removed?",
     "ground_truth": "28. Confession made after removal of impression caused by inducement, threat or promise, relevant.—If such a confession as is referred to in section 24 is made after the impression caused by any such inducement, threat or promise has, in the opinion of the Court, been fully removed, it is relevant.",
-    "relevant_sections": [
-      "IEA Section 28"
-    ],
+    "relevant_sections": ["IEA Section 28"],
     "query_type": "edge_case",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "How did IEA treat confessions made under promise of secrecy or when the accused was drunk?",
     "ground_truth": "29. Confession otherwise relevant not to become irrelevant because of promise of secrecy, etc.—If such a confession is otherwise relevant, it does not become irrelevant merely because it was made under a promise of secrecy, or in consequence of a deception practiced on the accused person for the purpose of obtaining it, or when he was drunk, or because it was made in answer to questions which he need not have answered.",
-    "relevant_sections": [
-      "IEA Section 29"
-    ],
+    "relevant_sections": ["IEA Section 29"],
     "query_type": "edge_case",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "What was the IEA rule about expert opinions and how has BSA changed it?",
-    "ground_truth": "45. Opinions of experts.—When the Court has to form an opinion upon a point of foreign law, or of science, or art, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science or art, or in questions as to identity of handwriting or finger impressions are relevant facts. Such persons are called experts.",
-    "relevant_sections": [
-      "IEA Section 45"
-    ],
+    "ground_truth": "[IEA Section 45:] Opinions of experts.—When the Court has to form an opinion upon a point of foreign law, or of science, or art, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science or art, or in questions as to identity of handwriting or finger impressions are relevant facts. Such persons are called experts. [BSA Section 39:] (1) When the Court has to form an opinion upon a point of foreign law or of science or art, or any other field, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science or art, or any other field, or in questions as to identity of handwriting or finger impressions are relevant facts and such persons are called experts. (2) When in a proceeding, the court has to form an opinion on any matter relating to any information transmitted or stored in any computer resource or any other electronic or digital form, the opinion of the Examiner of Electronic Evidence referred to in section 79A of the Information Technology Act, 2000 (21 of 2000), is a relevant fact. Explanation.—For the purposes of this sub-section, an Examiner of Electronic Evidence shall be an expert. [Key differences: BSA adds 'any other field' broadening expert opinion beyond law/science/art; explicitly adds Examiners of Electronic Evidence as recognised experts for digital/computer evidence.]",
+    "relevant_sections": ["IEA Section 45", "BSA Section 39"],
     "query_type": "comparison",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "How has BSA expanded expert opinion compared to IEA — does it now include digital evidence experts?",
     "ground_truth": "39. Opinions of experts.—(1) When the Court has to form an opinion upon a point of foreign law or of science or art, or any other field, or as to identity of handwriting or finger impressions, the opinions upon that point of persons specially skilled in such foreign law, science or art, or any other field, or in questions as to identity of handwriting or finger impressions are relevant facts and such persons are called experts. (2) When in a proceeding, the court has to form an opinion on any matter relating to any information transmitted or stored in any computer resource or any other electronic or digital form, the opinion of the Examiner of Electronic Evidence referred to in section 79A of the Information Technology Act, 2000 (21 of 2000), is a relevant fact.",
-    "relevant_sections": [
-      "BSA Section 39",
-      "IEA Section 45"
-    ],
+    "relevant_sections": ["BSA Section 39", "IEA Section 45"],
     "query_type": "comparison",
-    "source_act": [
-      "IEA",
-      "BSA"
-    ]
+    "source_act": ["IEA", "BSA"]
   },
   {
     "question": "Under IEA, if a person was coerced into making a confession, was it admissible?",
     "ground_truth": "24. Confession caused by inducement, threat or promise, when irrelevant in criminal proceeding.—A confession made by an accused person is irrelevant in a criminal proceeding, if the making of the confession appears to the Court to have been caused by any inducement, threat or promise having reference to the charge against the accused person, proceeding from a person in authority and sufficient, in the opinion of the Court, to give the accused person grounds which would appear to him reasonable for supposing that by making it he would gain any advantage or avoid any evil of a temporal nature in reference to the proceedings against him.",
-    "relevant_sections": [
-      "IEA Section 24"
-    ],
+    "relevant_sections": ["IEA Section 24"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "How did IEA handle electronic records — was it different from the old approach?",
     "ground_truth": "22A. When oral admission as to contents of electronic records are relevant.",
-    "relevant_sections": [
-      "IEA Section 22A"
-    ],
+    "relevant_sections": ["IEA Section 22A"],
     "query_type": "comparison",
-    "source_act": [
-      "IEA",
-      "BSA"
-    ]
+    "source_act": ["IEA", "BSA"]
   },
   {
     "question": "Under IEA, when can a co-accused's confession be used against other accused persons tried jointly?",
     "ground_truth": "30. Consideration of proved confession affecting person making it and others jointly under trial for same offence.—When more persons than one are being tried jointly for the same offence, and a confession made by one of such persons affecting himself and some other of such persons is proved, the Court may take into consideration such confession as against such other person as well as against the person who makes such confession.",
-    "relevant_sections": [
-      "IEA Section 30"
-    ],
+    "relevant_sections": ["IEA Section 30"],
     "query_type": "edge_case",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Under the BSA, if a confession is made in police custody but a Magistrate is present, is it admissible?",
     "ground_truth": "23. (2) No confession made by any person while he is in the custody of a police officer, unless it is made in the immediate presence of a Magistrate shall be proved against him: Provided that when any fact is deposed to as discovered in consequence of information received from a person accused of any offence, in the custody of a police officer, so much of such information, whether it amounts to a confession or not, as relates distinctly to the fact discovered, may be proved.",
-    "relevant_sections": [
-      "BSA Section 23"
-    ],
+    "relevant_sections": ["BSA Section 23"],
     "query_type": "edge_case",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "Is the BNS definition of rape wider than the old IPC definition?",
     "ground_truth": "63. A man is said to commit \"rape\" if he—(a) penetrates his penis, to any extent, into the vagina, mouth, urethra or anus of a woman or makes her to do so with him or any other person; or (b) inserts, to any extent, any object or a part of the body, not being the penis, into the vagina, the urethra or anus of a woman or makes her to do so with him or any other person; or (c) manipulates any part of the body of a woman so as to cause penetration into the vagina, urethra, anus or any part of body of such woman or makes her to do so with him or any other person; or (d) applies his mouth to the vagina, anus, urethra of a woman or makes her to do so with him or any other person. [IPC Section 375 provided:] Explanation.-Penetration is sufficient to constitute the sexual intercourse necessary to the offence of rape.",
-    "relevant_sections": [
-      "BNS Section 63",
-      "IPC Section 375"
-    ],
+    "relevant_sections": ["BNS Section 63", "IPC Section 375"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "Under IPC, was there a specific section on petty organised crime? What does BNS say?",
-    "ground_truth": "112. (1) Whoever, being a member of a group or gang, either singly or jointly, commits any act of theft, snatching, cheating, unauthorised selling of tickets, unauthorised betting or gambling, selling of public examination question papers or any other similar criminal act, is said to commit petty organised crime. (2) Whoever commits any petty organised crime shall be punished with imprisonment for a term which shall not be less than one year but which may extend to seven years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 112"
-    ],
+    "ground_truth": "[IPC:] The IPC contained no separate provision for 'petty organised crime.' Such activities were prosecuted under the general theft (Section 379), cheating (Section 420), or criminal conspiracy (Section 120B) provisions, without any enhanced punishment for the organised/gang dimension of minor offences. [BNS Section 112:] (1) Whoever, being a member of a group or gang, either singly or jointly, commits any act of theft, snatching, cheating, unauthorised selling of tickets, unauthorised betting or gambling, selling of public examination question papers or any other similar criminal act, is said to commit petty organised crime. Explanation.—For the purposes of this sub-section \"theft\" includes trick theft, theft from vehicle, dwelling house or business premises, cargo theft, pick pocketing, theft through card skimming, shoplifting and theft of Automated Teller Machine. (2) Whoever commits any petty organised crime shall be punished with imprisonment for a term which shall not be less than one year but which may extend to seven years, and shall also be liable to fine.",
+    "relevant_sections": ["BNS Section 112", "IPC"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "How does the new BNS deal with 'snatching' — was it a separate offence under IPC?",
-    "ground_truth": "304. (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 304"
-    ],
+    "ground_truth": "[IPC:] The IPC did not have a separate offence of snatching. Snatching was prosecuted as ordinary theft under IPC Section 378/379, or as robbery under Section 390/392 if force was used, without any distinct intermediate category. [BNS Section 304:] (1) Theft is snatching if, in order to commit theft, the offender suddenly or quickly or forcibly seizes or secures or grabs or takes away from any person or from his possession any movable property. (2) Whoever commits snatching, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine. [BNS thus creates snatching as a distinct named offence with its own punishment, sitting between ordinary theft (up to 3 years under BNS 305) and robbery (up to 10 years under BNS 309).]",
+    "relevant_sections": ["BNS Section 304", "IPC"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "Under IEA, who bears the burden of proving a particular fact in a case?",
     "ground_truth": "103. Burden of proof as to particular fact.—The burden of proof as to any particular fact lies on that person who wishes the Court to believe in its existence, unless it is provided by any law that the proof of that fact shall lie on any particular person.",
-    "relevant_sections": [
-      "IEA Section 103"
-    ],
+    "relevant_sections": ["IEA Section 103"],
     "query_type": "definition",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Under IPC, what was the punishment for robbery causing hurt?",
     "ground_truth": "309. (6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 309"
-    ],
+    "relevant_sections": ["BNS Section 309"],
     "query_type": "comparison",
-    "source_act": [
-      "IPC",
-      "BNS"
-    ]
+    "source_act": ["IPC", "BNS"]
   },
   {
     "question": "What is the BNSS provision for a woman who is raped and wants to report to a different police station from where the crime occurred?",
     "ground_truth": "173. (1) Every information relating to the commission of a cognizable offence, irrespective of the area where the offence is committed, may be given orally or by electronic communication to an officer in charge of a police station, and if given—(i) orally, it shall be reduced to writing by him or under his direction, and be read over to the informant; and every such information, whether given in writing or reduced to writing as aforesaid, shall be signed by the person giving it.",
-    "relevant_sections": [
-      "BNSS Section 173"
-    ],
+    "relevant_sections": ["BNSS Section 173"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is 'document' defined as under the Bharatiya Nyaya Sanhita?",
     "ground_truth": "2. (8) \"document\" means any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, and includes electronic and digital record, intended to be used, or which may be used, as evidence of that matter.",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "How long can someone be held in police custody before charges must be filed under BNSS?",
     "ground_truth": "187. (3) The Magistrate may authorise the detention of the accused person, beyond the period of fifteen days, if he is satisfied that adequate grounds exist for doing so, but no Magistrate shall authorise the detention of the accused person in custody under this sub-section for a total period exceeding—(i) ninety days, where the investigation relates to an offence punishable with death, imprisonment for life or imprisonment for a term of ten years or more; (ii) sixty days, where the investigation relates to any other offence, and, on the expiry of the said period of ninety days, or sixty days, as the case may be, the accused person shall be released on bail if he is prepared to and does furnish bail.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "relevant_sections": ["BNSS Section 187"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is 'wrongful gain' and 'wrongful loss' under BNS?",
     "ground_truth": "2. (36) \"wrongful gain\" means gain by unlawful means of property to which the person gaining is not legally entitled; (37) \"wrongful loss\" means the loss by unlawful means of property to which the person losing it is legally entitled; (38) \"gaining wrongfully\" and \"losing wrongfully\".—A person is said to gain wrongfully when such person retains wrongfully, as well as when such person acquires wrongfully. A person is said to lose wrongfully when such person is wrongfully kept out of any property, as well as when such person is wrongfully deprived of property.",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Is a person legally entitled to kill in self-defence if attacked with acid?",
     "ground_truth": "38. The right of private defence of the body extends, under the restrictions specified in section 37, to the voluntary causing of death or of any other harm to the assailant, if the offence which occasions the exercise of the right be of any of the descriptions hereinafter enumerated, namely:—(g) an act of throwing or administering acid or an attempt to throw or administer acid which may reasonably cause the apprehension that grievous hurt will otherwise be the consequence of such act.",
-    "relevant_sections": [
-      "BNS Section 38"
-    ],
+    "relevant_sections": ["BNS Section 38"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for a terrorist act that results in death?",
     "ground_truth": "113. (2) Whoever commits a terrorist act shall,—(a) if such offence has resulted in the death of any person, be punished with death or imprisonment for life, and shall also be liable to fine; (b) in any other case, be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 113"
-    ],
+    "relevant_sections": ["BNS Section 113"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is 'good faith' as defined in the BNS?",
     "ground_truth": "2. (11) \"good faith\".—Nothing is said to be done or believed in \"good faith\" which is done or believed without due care and attention.",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the definition of 'injury' under the Bharatiya Nyaya Sanhita?",
     "ground_truth": "2. (14) \"injury\" means any harm whatever illegally caused to any person, in body, mind, reputation or property.",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the difference between culpable homicide and murder when the act is done with bodily injury that is sufficient to cause death in the ordinary course of nature?",
     "ground_truth": "101. (c) if the act by which the death is caused is done with the intention of causing bodily injury to any person and the bodily injury intended to be inflicted is sufficient in the ordinary course of nature to cause death.",
-    "relevant_sections": [
-      "BNS Section 101"
-    ],
+    "relevant_sections": ["BNS Section 101"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the definition of a 'public servant' under the BNS?",
     "ground_truth": "2. (28) \"public servant\" means a person falling under any of the descriptions, namely:—(a) every commissioned officer in the Army, Navy or Air Force; (b) every Judge including any person empowered by law to discharge, whether by himself or as a member of any body of persons, any adjudicatory functions; (c) every officer of a Court including a liquidator, receiver or commissioner whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate, or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order in the Court.",
-    "relevant_sections": [
-      "BNS Section 2"
-    ],
+    "relevant_sections": ["BNS Section 2"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What happens when a criminal act is done by several persons in furtherance of common intention under BNS?",
     "ground_truth": "3. (5) When a criminal act is done by several persons in furtherance of the common intention of all, each of such persons is liable for that act in the same manner as if it were done by him alone.",
-    "relevant_sections": [
-      "BNS Section 3"
-    ],
+    "relevant_sections": ["BNS Section 3"],
     "query_type": "procedural",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for causing miscarriage voluntarily under the new law?",
     "ground_truth": "88. Whoever voluntarily causes a woman with child to miscarry, shall, if such miscarriage be not caused in good faith for the purpose of saving the life of the woman, be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both; and, if the woman be quick with child, shall be punished with imprisonment of either description for a term which may extend to seven years.",
-    "relevant_sections": [
-      "BNS Section 88"
-    ],
+    "relevant_sections": ["BNS Section 88"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Can a rape FIR be registered only by a woman police officer — what does the law say?",
     "ground_truth": "173. Provided that if the information is given by the woman against whom an offence under section 64, section 65, section 66, section 67, section 68, section 69, section 70, section 71, section 74, section 75, section 76, section 77, section 78, section 79 or section 124 of the Bharatiya Nyaya Sanhita, 2023 is alleged to have been committed or attempted, then such information shall be recorded, by a woman police officer or any woman officer.",
-    "relevant_sections": [
-      "BNSS Section 173"
-    ],
+    "relevant_sections": ["BNSS Section 173"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is 'kidnapping from lawful guardianship' and who can be kidnapped in this sense?",
     "ground_truth": "137. (1)(b) whoever takes or entices any child or any person of unsound mind, out of the keeping of the lawful guardian of such child or person of unsound mind, without the consent of such guardian, is said to kidnap such child or person from lawful guardianship. Explanation.—The words \"lawful guardian\" in this clause include any person lawfully entrusted with the care or custody of such child or other person.",
-    "relevant_sections": [
-      "BNS Section 137"
-    ],
+    "relevant_sections": ["BNS Section 137"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the punishment for kidnapping a child for the purpose of begging?",
     "ground_truth": "139. (1) Whoever kidnaps any child or, not being the lawful guardian of such child, obtains the custody of the child, in order that such child may be employed or used for the purposes of begging shall be punishable with rigorous imprisonment for a term which shall not be less than ten years but which may extend to imprisonment for life, and shall also be liable to fine. (2) Whoever maims any child in order that such child may be employed or used for the purposes of begging shall be punishable with imprisonment which shall not be less than twenty years, but which may extend to life which shall mean imprisonment for the remainder of that person's natural life, and with fine.",
-    "relevant_sections": [
-      "BNS Section 139"
-    ],
+    "relevant_sections": ["BNS Section 139"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What is the CrPC rule on how long after a crime a court can take cognizance?",
     "ground_truth": "519. Notwithstanding anything contained in the foregoing provisions of this Chapter, any Court may take cognizance of an offence after the expiry of the period of limitation, if it is satisfied on the facts and in the circumstances of the case that the delay has been properly explained or that it is necessary so to do in the interests of justice.",
-    "relevant_sections": [
-      "BNSS Section 519"
-    ],
+    "relevant_sections": ["BNSS Section 519"],
     "query_type": "procedural",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "What is the punishment for robbery if hurt is caused during the robbery under BNS?",
     "ground_truth": "309. (6) If any person, in committing or in attempting to commit robbery, voluntarily causes hurt, such person, and any other person jointly concerned in committing or attempting to commit such robbery, shall be punished with imprisonment for life, or with rigorous imprisonment for a term which may extend to ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 309"
-    ],
+    "relevant_sections": ["BNS Section 309"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Under IEA, was there a concept of 'electronic communication' expressly included?",
-    "ground_truth": "22A. When oral admission as to contents of electronic records are relevant. [This was inserted later as an amendment. Under the new BSA, section 2(d) explicitly defines document to include electronic and digital records, and section 2(e) includes statements given electronically as evidence.]",
-    "relevant_sections": [
-      "IEA Section 22A",
-      "BSA Section 2"
-    ],
+    "ground_truth": "22A: When oral admission as to contents of electronic records are relevant.—Oral admissions as to the contents of electronic records are not relevant, unless the genuineness of the electronic record produced is in question. [BSA Section 2(d):] \"document\" means any matter expressed or described or otherwise recorded upon any substance by means of letters, figures or marks or any other means or by more than one of those means, intended to be used, or which may be used, for the purpose of recording that matter and includes electronic and digital records. Illustrations — (vi) An electronic record on emails, server logs, documents on computers, laptop or smartphone, messages, websites, locational evidence and voice mail messages stored on digital devices are documents. [BSA Section 2(e):] \"evidence\" means and includes—(i) all statements including statements given electronically which the Court permits or requires to be made before it by witnesses in relation to matters of fact under inquiry; (ii) all documents including electronic or digital records produced for the inspection of the Court.",
+    "relevant_sections": ["IEA Section 22A", "BSA Section 2"],
     "query_type": "comparison",
-    "source_act": [
-      "IEA",
-      "BSA"
-    ]
+    "source_act": ["IEA", "BSA"]
   },
   {
     "question": "What is the punishment for voluntarily causing grievous hurt that results in permanent disability?",
     "ground_truth": "117. (3) Whoever commits an offence under sub-section (1) and in the course of such commission causes any hurt to a person which causes that person to be in permanent disability or in persistent vegetative state, shall be punished with rigorous imprisonment for a term which shall not be less than ten years.",
-    "relevant_sections": [
-      "BNS Section 117"
-    ],
+    "relevant_sections": ["BNS Section 117"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Under BNSS, when is a person entitled to bail as of right upon expiry of the investigation period?",
     "ground_truth": "187. (3) on the expiry of the said period of ninety days, or sixty days, as the case may be, the accused person shall be released on bail if he is prepared to and does furnish bail, and every person released on bail under this sub-section shall be deemed to be so released under the provisions of Chapter XXXV for the purposes of that Chapter.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "relevant_sections": ["BNSS Section 187"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What is the punishment for abducting a woman with intent to force her into marriage or illicit intercourse?",
     "ground_truth": "87. Whoever kidnaps or abducts any woman with intent that she may be compelled, or knowing it to be likely that she will be compelled, to marry any person against her will, or in order that she may be forced or seduced to illicit intercourse, or knowing it to be likely that she will be forced or seduced to illicit intercourse, shall be punished with imprisonment of either description for a term which may extend to ten years, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 87"
-    ],
+    "relevant_sections": ["BNS Section 87"],
     "query_type": "punishment",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What did the old IEA say about the burden of proving someone is alive when they have not been heard from in seven years?",
-    "ground_truth": "108. Burden of proving that person is alive who has not been heard of for seven years.",
-    "relevant_sections": [
-      "IEA Section 108"
-    ],
+    "ground_truth": "108. Burden of proving that person is alive who has not been heard of for seven years.—Provided that when the question is whether a man is alive or dead, and it is proved that he has not been heard of for seven years by those who would naturally have heard of him if he had been alive, the burden of proving that he is alive is shifted to the person who affirms it.",
+    "relevant_sections": ["IEA Section 108"],
     "query_type": "procedural",
-    "source_act": [
-      "IEA"
-    ]
+    "source_act": ["IEA"]
   },
   {
     "question": "Does BSA change how the dying declaration is treated compared to IEA?",
-    "ground_truth": "26. (a) when the statement is made by a person as to the cause of his death, or as to any of the circumstances of the transaction which resulted in his death, in cases in which the cause of that person's death comes into question. Such statements are relevant whether the person who made them was or was not, at the time when they were made, under expectation of death, and whatever may be the nature of the proceeding in which the cause of his death comes into question.",
-    "relevant_sections": [
-      "BSA Section 26"
-    ],
+    "ground_truth": "[IEA Section 32(1) — Dying Declaration:] When the statement is made by a person as to the cause of his death, or as to any of the circumstances of the transaction which resulted in his death, in cases in which the cause of that person's death comes into question. Such statements are relevant whether the person who made them was or was not, at the time when they were made, under expectation of death, and whatever may be the nature of the proceeding in which the cause of his death comes into question. [BSA Section 26(a):] when the statement is made by a person as to the cause of his death, or as to any of the circumstances of the transaction which resulted in his death, in cases in which the cause of that person's death comes into question. Such statements are relevant whether the person who made them was or was not, at the time when they were made, under expectation of death, and whatever may be the nature of the proceeding in which the cause of his death comes into question. [The dying declaration provision in BSA Section 26(a) is substantively identical to IEA Section 32(1). The admissibility standard and scope are unchanged.]",
+    "relevant_sections": ["BSA Section 26", "IEA Section 32"],
     "query_type": "comparison",
-    "source_act": [
-      "IEA",
-      "BSA"
-    ]
+    "source_act": ["IEA", "BSA"]
   },
   {
     "question": "What is the definition of abduction under the Bharatiya Nyaya Sanhita?",
     "ground_truth": "138. Whoever by force compels, or by any deceitful means induces, any person to go from any place, is said to abduct that person.",
-    "relevant_sections": [
-      "BNS Section 138"
-    ],
+    "relevant_sections": ["BNS Section 138"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Can a person be convicted for conspiring or abetting a terrorist act even if no death results?",
     "ground_truth": "113. (3) Whoever conspires or attempts to commit, or advocates, abets, advises or incites, directly or knowingly facilitates the commission of a terrorist act or any act preparatory to the commission of a terrorist act, shall be punished with imprisonment for a term which shall not be less than five years but which may extend to imprisonment for life, and shall also be liable to fine.",
-    "relevant_sections": [
-      "BNS Section 113"
-    ],
+    "relevant_sections": ["BNS Section 113"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "Under BNS, how is life imprisonment calculated in terms of years when computing fractions of sentence?",
     "ground_truth": "6. In calculating fractions of terms of punishment, imprisonment for life shall be reckoned as equivalent to imprisonment for twenty years unless otherwise provided.",
-    "relevant_sections": [
-      "BNS Section 6"
-    ],
+    "relevant_sections": ["BNS Section 6"],
     "query_type": "definition",
-    "source_act": [
-      "BNS"
-    ]
+    "source_act": ["BNS"]
   },
   {
     "question": "What must the police report include when submitting a chargesheet under BNSS?",
     "ground_truth": "193. (3)(i) As soon as the investigation is completed, the officer in charge of the police station shall forward, including through electronic communication to a Magistrate empowered to take cognizance of the offence on a police report, a report in the form as the State Government may, by rules provide, stating—(a) the names of the parties; (b) the nature of the information; (c) the names of the persons who appear to be acquainted with the circumstances of the case; (d) whether any offence appears to have been committed and, if so, by whom; (e) whether the accused has been arrested; (f) whether the accused has been released on his bond or bail bond; (g) whether the accused has been forwarded in custody under section 190.",
-    "relevant_sections": [
-      "BNSS Section 193"
-    ],
+    "relevant_sections": ["BNSS Section 193"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Under BNSS what happens to victim compensation when the offender is not identified or traced?",
     "ground_truth": "396. (4) Where the offender is not traced or identified, but the victim is identified, and where no trial takes place, the victim or his dependents may make an application to the State or the District Legal Services Authority for award of compensation. (5) On receipt of such recommendations or on the application under sub-section (4), the State or the District Legal Services Authority shall, after due enquiry award adequate compensation by completing the enquiry within two months.",
-    "relevant_sections": [
-      "BNSS Section 396"
-    ],
+    "relevant_sections": ["BNSS Section 396"],
     "query_type": "edge_case",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "Under BNSS, is the accused entitled to be heard before bail is refused for an offence punishable with death?",
     "ground_truth": "480. Provided also that no person shall, if the offence alleged to have been committed by him is punishable with death, imprisonment for life, or imprisonment for seven years or more, be released on bail by the Court under this sub-section without giving an opportunity of hearing to the Public Prosecutor.",
-    "relevant_sections": [
-      "BNSS Section 480"
-    ],
+    "relevant_sections": ["BNSS Section 480"],
     "query_type": "procedural",
-    "source_act": [
-      "BNSS"
-    ]
+    "source_act": ["BNSS"]
   },
   {
     "question": "What does BSA say about oral evidence — must a witness testify directly about what they personally perceived?",
-    "ground_truth": "54. Proof of facts by oral evidence. 55. Oral evidence to be direct.",
-    "relevant_sections": [
-      "BSA Section 54",
-      "BSA Section 55"
-    ],
+    "ground_truth": "54. All facts, except the contents of documents or electronic records, may be proved by oral evidence. 55. Oral evidence must, in all cases whatever, be direct; that is to say—if it refers to a fact which could be seen, it must be the evidence of a witness who says he saw it; if it refers to a fact which could be heard, it must be the evidence of a witness who says he heard it; if it refers to a fact which could be perceived by any other sense or in any other manner, it must be the evidence of a witness who says he perceived it by that sense or in that manner; if it refers to an opinion or to the grounds on which that opinion is held, it must be the evidence of the person who holds that opinion on those grounds.",
+    "relevant_sections": ["BSA Section 54", "BSA Section 55"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "Under BSA, when can facts not mentioned in the rules of evidence still become relevant?",
-    "ground_truth": "9. When facts not otherwise relevant become relevant.",
-    "relevant_sections": [
-      "BSA Section 9"
-    ],
+    "ground_truth": "9. Facts not otherwise relevant are relevant—(1) if they are inconsistent with any fact in issue or relevant fact; (2) if by themselves or in connection with other facts they make the existence or non-existence of any fact in issue or relevant fact highly probable or improbable.",
+    "relevant_sections": ["BSA Section 9"],
     "query_type": "definition",
-    "source_act": [
-      "BSA"
-    ]
+    "source_act": ["BSA"]
   },
   {
     "question": "Under CrPC, how was a judgment required to be pronounced in a criminal court — and what has BNSS changed?",
-    "ground_truth": "392. (1) The judgment in every trial in any Criminal Court of original jurisdiction shall be pronounced in open Court by the presiding officer immediately after the termination of the trial or at some subsequent time not later than forty-five days of which notice shall be given to the parties or their advocates,—(a) by delivering the whole of the judgment; or (b) by reading out the whole of the judgment; or (c) by reading out the operative part of the judgment and explaining the substance of the judgment in a language which is understood by the accused or his advocate.",
-    "relevant_sections": [
-      "BNSS Section 392"
-    ],
+    "ground_truth": "[CrPC Section 353(1):] The judgment in every trial in any Criminal Court of original jurisdiction shall be pronounced in open Court by the presiding officer immediately after the termination of the trial or at some subsequent time of which notice shall be given to the parties or their advocates. [CrPC had no fixed time limit for pronouncement after the conclusion of trial.] [BNSS Section 392(1):] The judgment in every trial in any Criminal Court of original jurisdiction shall be pronounced in open Court by the presiding officer immediately after the termination of the trial or at some subsequent time not later than forty-five days of which notice shall be given to the parties or their advocates—(a) by delivering the whole of the judgment; or (b) by reading out the whole of the judgment; or (c) by reading out the operative part of the judgment and explaining the substance of the judgment in a language which is understood by the accused or his advocate. [Key difference: BNSS introduces a mandatory 45-day outer limit for pronouncing judgment after conclusion of trial; CrPC had no such time limit.]",
+    "relevant_sections": ["BNSS Section 392", "CrPC Section 353"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "What were the special powers of the High Court or Court of Session for bail under the old CrPC and new BNSS?",
     "ground_truth": "483. (1) A High Court or Court of Session may direct,—(a) that any person accused of an offence and in custody be released on bail, and if the offence is of the nature specified in sub-section (3) of section 480, may impose any condition which it considers necessary for the purposes mentioned in that sub-section; (b) that any condition imposed by a Magistrate when releasing any person on bail be set aside or modified.",
-    "relevant_sections": [
-      "BNSS Section 483"
-    ],
+    "relevant_sections": ["BNSS Section 483"],
     "query_type": "procedural",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "Under CrPC, could a police officer discharge an arrested person without a magistrate order?",
-    "ground_truth": "60. No person who has been arrested by a police officer shall be discharged except on his bond, or bail bond, or under the special order of a Magistrate.",
-    "relevant_sections": [
-      "BNSS Section 60"
-    ],
+    "ground_truth": "[CrPC Section 59:] No person who has been arrested by a police officer shall be discharged except on his own bond or on bail, or under the special order of a Magistrate. [BNSS Section 60:] No person who has been arrested by a police officer shall be discharged except on his bond, or bail bond, or under the special order of a Magistrate. [The substantive rule is the same in both CrPC and BNSS: a person arrested by police cannot be discharged without a bond, bail bond, or Magistrate's special order.]",
+    "relevant_sections": ["BNSS Section 60", "CrPC Section 59"],
     "query_type": "procedural",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   },
   {
     "question": "How has the BNSS changed the rule about producing the accused before a magistrate compared to CrPC — is remote production allowed now?",
-    "ground_truth": "187. (4) No Magistrate shall authorise detention of the accused in custody of the police under this section unless the accused is produced before him in person for the first time and subsequently every time till the accused remains in the custody of the police, but the Magistrate may extend further detention in judicial custody on production of the accused either in person or through the audio-video electronic means.",
-    "relevant_sections": [
-      "BNSS Section 187"
-    ],
+    "ground_truth": "[CrPC Section 167:] CrPC contained no express provision permitting production of the accused via video conferencing or audio-video means. The accused was required to be physically produced before the Magistrate for each remand (whether police custody or judicial custody). Some High Courts allowed video conferencing under inherent jurisdiction, but no explicit statutory authorization existed in CrPC. [BNSS Section 187(4):] No Magistrate shall authorise detention of the accused in custody of the police under this section unless the accused is produced before him in person for the first time and subsequently every time till the accused remains in the custody of the police, but the Magistrate may extend further detention in judicial custody on production of the accused either in person or through the audio-video electronic means. [Key change: BNSS expressly permits audio-video electronic production for judicial custody remand extensions. However, for the first appearance and all police custody remands, physical production before the Magistrate remains mandatory.]",
+    "relevant_sections": ["BNSS Section 187", "CrPC Section 167"],
     "query_type": "comparison",
-    "source_act": [
-      "CrPC",
-      "BNSS"
-    ]
+    "source_act": ["CrPC", "BNSS"]
   }
 ]

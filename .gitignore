@@ -34,9 +34,8 @@ build/
 .env.local
 
 # OS
-.DS_Store
-Thumbs.db
+# .DS_Store
+# Thumbs.db
 
 # Cache
 .cache/
-*.pkl

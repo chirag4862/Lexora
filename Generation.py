@@ -59,7 +59,7 @@ def call_llm(labelled_context, user_query, invalid_citations, attempt, chat_hist
             "chat_history": chat_history,
         })
 
-    print("\n\nllm Result: \n",result)
+    # print("\n\nllm Result: \n",result)
     return result
 
 
@@ -120,38 +120,93 @@ def get_labelled_context(user_query):
         final_doc.append(f"{metadata_string} \n {page_content}")
 
     labelled_context = "\n\n---\n\n".join(final_doc)
-    print("labelled_context: \n", labelled_context)
+    # print("labelled_context: \n", labelled_context)
     return labelled_context, docs
 
 
 
 
+def generate_answer_ragas(user_query: str) -> dict:
+    labelled_context, docs = get_labelled_context(user_query)
+
+    attempt = 0
+    max_attempts = 2
+    invalid_citations = []
+    chat_history = []
+    final_result = None
+    validation_result = None
 
 
+    if not docs:
+        final_result = "Sorry, no relevant documents found for your query."
+    else:
+        while attempt < max_attempts:
+            print("Going for attempt: ", attempt + 1)
+            result = call_llm(labelled_context, user_query, invalid_citations, attempt, chat_history)
+            validation_result = validate_citations(result, docs)
+            # print("\nvalidation_result: ", validation_result)
+            if validation_result.get("is_valid"):
+                break
+            chat_history.append(AIMessage(content=str(result)))
+            invalid_citations = validation_result.get("invalid_citations")
+            attempt = attempt + 1
 
-user_query = "what is the current procedure for bail"
+        if not validation_result.get("is_valid"):
+            final_result = "Sorry the System couldn't provide a valid result"
+        else:
+            final_result = result.get("answer")
 
-labelled_context, docs = get_labelled_context(user_query)
+    # print(final_result)
+    return {
+        "answer": final_result,
+        "contexts": [doc.page_content for doc in docs]
+    }
 
-attempt = 0
-max_attempts = 2
-invalid_citations = []
-chat_history = []
-while attempt < max_attempts:
-    print("Going for attempt: ", attempt + 1)
-    result = call_llm(labelled_context, user_query, invalid_citations, attempt, chat_history)
-    validation_result = validate_citations(result, docs)
-    print("\nvalidation_result: ", validation_result)
-    if validation_result.get("is_valid"):
-        break
-    chat_history.append(AIMessage(content=str(result)))
-    invalid_citations = validation_result.get("invalid_citations")
-    attempt = attempt + 1
 
-if not validation_result.get("is_valid"):
-    final_result = "Sorry the System couldn't provide a valid result"
-else:
-    final_result = result.get("answer")
+def generate_answer(user_query: str) -> dict:
+    labelled_context, docs = get_labelled_context(user_query)
 
-print(final_result)
+    attempt = 0
+    max_attempts = 2
+    invalid_citations = []
+    chat_history = []
+    final_result = None
+    validation_result = None
 
+
+    if not docs:
+        final_result = "Sorry, no relevant documents found for your query."
+        citations = []
+        answer_found = False
+    else:
+        while attempt < max_attempts:
+            print("Going for attempt: ", attempt + 1)
+            result = call_llm(labelled_context, user_query, invalid_citations, attempt, chat_history)
+            validation_result = validate_citations(result, docs)
+            # print("\nvalidation_result: ", validation_result)
+            if validation_result.get("is_valid"):
+                break
+            chat_history.append(AIMessage(content=str(result)))
+            invalid_citations = validation_result.get("invalid_citations")
+            attempt = attempt + 1
+
+        if not validation_result.get("is_valid"):
+            final_result = "Sorry the System couldn't provide a valid result"
+            citations = result.get("citations")
+            answer_found = False
+        else:
+            final_result = result.get("answer")
+            citations = result.get("citations")
+            answer_found = result.get("answer_found")
+
+    print(final_result)
+    return {
+        "answer": final_result,
+        "citations": citations,
+        "answer_found": answer_found
+    }
+
+
+if __name__ == "__main__":
+    user_query = "what is the current procedure for bail"
+    generate_answer(user_query)
