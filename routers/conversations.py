@@ -49,7 +49,18 @@ def delete_conversations(conversation_id: str, current_user = Depends(get_curren
             result = res.data
             return result
         else:
-            return "Conversation dosen't belong to this user"
+            return {"result":"Conversation dosen't belong to this user"}
     except Exception as e:
         logger.exception("Exception occured while Deleting conversations")
         raise HTTPException(status_code=500, detail="Failed in Deleting Conversation")
+
+ 
+@router.get("/{conversation_id}")
+def get_messages(conversation_id: str, current_user = Depends(get_current_user)):
+    try:
+        messages = supabase.table("messages").select("*").eq("conversation_id", conversation_id).execute()
+        messages_data = messages.data
+        return messages_data
+    except Exception as e:
+        logger.exception("Exception occured while fetching messages")
+        raise HTTPException(status_code=500, detail="Failed in Fetching Messages")
