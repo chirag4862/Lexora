@@ -4,6 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 import json
 from langchain_openai import ChatOpenAI
+import re
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -19,7 +20,11 @@ class LegalAnswer(TypedDict):
     citations: List[Citation]
     answer_found: bool
 
-
+def normalize_section(s):
+    if not s:
+        return None
+    match = re.search(r'\d+', str(s))
+    return match.group() if match else None
 
 def legislation_label(metadata):
     return f"[ {metadata.get('short_name')} | {metadata.get('status')} | {metadata.get('act_type')} | Section {metadata.get('section_number')} ]"
@@ -33,7 +38,11 @@ def call_llm(labelled_context, user_query, invalid_citations, attempt, chat_hist
     if attempt > 0:
         with open("Prompts/retry_prompt.json") as f:
             retry_template = json.load(f)["template"]
-        system_prompt = retry_template.format(invalid_citations=invalid_citations)
+        invalid_str = "\n".join(
+            f"- {c['act']} Section {c['section']} ({c['status']}, {c['act_type']})"
+            for c in invalid_citations
+        )
+        system_prompt = retry_template.format(invalid_citations=invalid_str)
     else:
         with open("Prompts/system_prompt.json") as f:
             system_prompt = json.load(f)["template"]
@@ -74,7 +83,12 @@ def validate_citations(result, docs):
     for rc in recieved_citations:
         is_valid = False
         for drc in docs_metadata:
-            if rc["act"] == drc.get("short_name") and rc["status"] == drc.get("status") and rc["act_type"] == drc.get("act_type") and rc["section"] == drc.get("section_number"):
+            rc_section = normalize_section(rc["section"])
+            dc_section = normalize_section(drc.get("section_number"))
+            if (rc["act"] == drc.get("short_name")
+                and rc["status"] == drc.get("status")
+                and rc["act_type"] == drc.get("act_type")
+                and rc_section == dc_section):
                 is_valid = True
         if is_valid:
             valid_citations.append(rc)
@@ -144,6 +158,8 @@ def generate_answer_ragas(user_query: str) -> dict:
             print("Going for attempt: ", attempt + 1)
             result = call_llm(labelled_context, user_query, invalid_citations, attempt, chat_history)
             validation_result = validate_citations(result, docs)
+            print("INVALID CITATIONS:", validation_result.get("invalid_citations"))
+            print("DOCS AVAILABLE:", [(d.metadata.get("short_name"), d.metadata.get("section_number")) for d in docs])
             # print("\nvalidation_result: ", validation_result)
             if validation_result.get("is_valid"):
                 break
@@ -163,13 +179,14 @@ def generate_answer_ragas(user_query: str) -> dict:
     }
 
 
-def generate_answer(user_query: str) -> dict:
-    labelled_context, docs = get_labelled_context(user_query)
+def generate_answer(user_query: str, history=None) -> dict:
+    standalone_query = contextualize_question(user_query, history)
+    labelled_context, docs = get_labelled_context(standalone_query)
 
     attempt = 0
     max_attempts = 2
     invalid_citations = []
-    chat_history = []
+    chat_history = list(history) if history else []
     final_result = None
     validation_result = None
 
@@ -205,6 +222,38 @@ def generate_answer(user_query: str) -> dict:
         "citations": citations,
         "answer_found": answer_found
     }
+
+
+
+def contextualize_question(question, history):  
+
+    if not history:
+        return question
+    
+    system_prompt = """Given a conversation history and a follow-up question, 
+    rephrase the follow-up into a standalone question that makes sense without 
+    the history. If it is already standalone, return it unchanged. 
+    Do NOT answer the question — only rephrase it. If the follow-up question refers 
+    to 'the law' or a legal concept without naming a specific act, assume it continues 
+    the subject of the current conversation and make that subject explicit in the rewrite."""
+
+    prompt = ChatPromptTemplate([
+        ("system", system_prompt),
+        MessagesPlaceholder(variable_name="history"),
+        ("human", "{question}")
+    ])
+
+    llm = ChatOpenAI(model="gpt-4o-mini")
+
+    chain = prompt | llm
+    result = chain.invoke({
+        "history": history,
+        "question": question
+    })
+
+    print("REWRITTEN QUERY:", result.content)
+
+    return result.content
 
 
 if __name__ == "__main__":

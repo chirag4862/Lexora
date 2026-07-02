@@ -3,6 +3,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from Generation import generate_answer
 from database import supabase
 from pydantic import BaseModel
+from langchain_core.messages import HumanMessage, AIMessage
+
 
 from auth import get_current_user
 router = APIRouter()
@@ -81,8 +83,17 @@ def ask(conversation_id: str, requestData: AskRequest, current_user = Depends(ge
         owns = supabase.table("conversations").select("id").eq("id", conversation_id).eq("user_id", current_user.id).execute()
         if not owns.data:
             raise HTTPException(404, "Conversation not found")
+        
+        past  = supabase.table("messages").select("*").eq("conversation_id", conversation_id).order("created_at").execute()
+        history = []
+        for m in past.data:
+            if m["role"] == "user":
+                history.append(HumanMessage(content=m["content"]))
+            else:
+                history.append(AIMessage(content=m["content"]))
+
         supabase.table("messages").insert({"conversation_id": conversation_id, "role": "user", "content": requestData.question}).execute()
-        response = generate_answer(requestData.question)
+        response = generate_answer(requestData.question, history)
         supabase.table("messages").insert({"conversation_id": conversation_id, "role": "assistant", "content": response["answer"], "metadata" : {"citations": response["citations"], "answer_found": response["answer_found"]}}).execute()
 
         return response

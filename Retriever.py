@@ -84,17 +84,12 @@ def retrieve_docs(user_query: str):
 
     query_filter = {}
     if len(result) > 1:
-        query_filter = {
-            "$and": [
-                {key: {"$eq": value}}
-                for key, value in result.items()
-            ]
-        }
-    else:
+        query_filter = {"$and": [{key: {"$eq": value}} for key, value in result.items()]}
+    elif len(result) == 1:
         key, value = next(iter(result.items()))
-        query_filter = {
-            key: {"$eq": value}
-        }
+        query_filter = {key: {"$eq": value}}
+    else:
+        query_filter = None
 
     # print("query_filter: ", query_filter)
 
