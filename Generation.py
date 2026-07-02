@@ -50,7 +50,7 @@ def call_llm(labelled_context, user_query, invalid_citations, attempt, chat_hist
         ("human", human_message)
     ])
 
-    llm = ChatOpenAI(model="gpt-4.1-2025-04-14")
+    llm = ChatOpenAI(model="gpt-5.4-2026-03-05")
     llm_model = llm.with_structured_output(LegalAnswer)
     chain =  prompt | llm_model
     result = chain.invoke({
