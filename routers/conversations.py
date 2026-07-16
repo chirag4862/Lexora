@@ -43,9 +43,11 @@ def get_conversations(current_user = Depends(get_current_user)):
 @router.delete("/{conversation_id}")
 def delete_conversations(conversation_id: str, current_user = Depends(get_current_user)):
     try:
-        res = supabase.table("conversations").delete().eq("id", conversation_id).eq("user_id", current_user.id).execute()
-        if not res.data:
+        owns = supabase.table("conversations").select("id").eq("id", conversation_id).eq("user_id", current_user.id).execute()
+        if not owns.data:
             return {"result":"Conversation dosen't belong to this user"}
+        supabase.table("messages").delete().eq("conversation_id", conversation_id).execute()
+        res = supabase.table("conversations").delete().eq("id", conversation_id).eq("user_id", current_user.id).execute()
         return res.data
     except Exception as e:
         logger.exception("Exception occured while Deleting conversations")
@@ -76,14 +78,16 @@ class AskResponse(BaseModel):
     citations: list
     answer_found: bool
 
-@router.post("/conversations/{conversation_id}/ask", response_model=AskResponse)
+@router.post("/{conversation_id}/ask", response_model=AskResponse)
 def ask(conversation_id: str, requestData: AskRequest, current_user = Depends(get_current_user)):
     logger.info("Received question: %s", requestData.question)
     try:
         owns = supabase.table("conversations").select("id").eq("id", conversation_id).eq("user_id", current_user.id).execute()
         if not owns.data:
             raise HTTPException(404, "Conversation not found")
-        
+
+        supabase.table("conversations").update({"title": requestData.question[:60]}).eq("id", conversation_id).is_("title", "null").execute()
+
         past  = supabase.table("messages").select("*").eq("conversation_id", conversation_id).order("created_at").execute()
         history = []
         for m in past.data:

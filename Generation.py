@@ -158,8 +158,8 @@ def generate_answer_ragas(user_query: str) -> dict:
             print("Going for attempt: ", attempt + 1)
             result = call_llm(labelled_context, user_query, invalid_citations, attempt, chat_history)
             validation_result = validate_citations(result, docs)
-            print("INVALID CITATIONS:", validation_result.get("invalid_citations"))
-            print("DOCS AVAILABLE:", [(d.metadata.get("short_name"), d.metadata.get("section_number")) for d in docs])
+            # print("INVALID CITATIONS:", validation_result.get("invalid_citations"))
+            # print("DOCS AVAILABLE:", [(d.metadata.get("short_name"), d.metadata.get("section_number")) for d in docs])
             # print("\nvalidation_result: ", validation_result)
             if validation_result.get("is_valid"):
                 break
@@ -251,7 +251,7 @@ def contextualize_question(question, history):
         "question": question
     })
 
-    print("REWRITTEN QUERY:", result.content)
+    # print("REWRITTEN QUERY:", result.content)
 
     return result.content
 

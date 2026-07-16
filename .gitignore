@@ -22,16 +22,22 @@ build/
 *~
 
 # Database
-# Database/ - commented out to include in repo
+# Database/ - intentionally NOT ignored yet; large-file strategy (LFS vs rebuild)
+# to be decided in backend-deploy phase
 # *.sqlite3
 # *.db
 
-# Models (large files)
-# Models/ - commented out to include in repo
+# Models (large files - downloaded on host later, not committed)
+Models/
 
 # Environment variables
 .env
 .env.local
+frontend/.env.local
+
+# Frontend
+frontend/node_modules/
+frontend/.next/
 
 # OS
 # .DS_Store
@@ -39,3 +45,9 @@ build/
 
 # Cache
 .cache/
+
+
+.claude/
+.claude-flow/
+CLAUDE.md
+bash.exe*

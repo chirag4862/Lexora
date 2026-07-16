@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #04070E; }
+  body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  a:hover { color: #F0D089; }
+  input::placeholder { color: rgba(255,255,255,0.32); }
+  @keyframes lexPulse { 0%,100% { opacity: .55; } 50% { opacity: .9; } }
+  @keyframes lexDrift { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  @keyframes lexDriftSlow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
+</style>
+</helmet>
+
+<div style="width: 1440px; height: 900px; margin: 0 auto; background: #070B14; position: relative; overflow: hidden; color: rgba(255,255,255,0.92); display: flex; align-items: center; justify-content: center;">
+
+  <!-- ===== wireframe sphere rising from bottom ===== -->
+  <div style="position: absolute; bottom: -560px; left: 50%; transform: translateX(-50%); width: 1000px; height: 1000px; pointer-events: none; z-index: 0;">
+    <!-- core glow -->
+    <div style="position: absolute; inset: -80px; border-radius: 50%; background: radial-gradient(circle at 50% 38%, rgba(240,208,137,0.30), rgba(212,168,67,0.10) 45%, transparent 70%); filter: blur(30px); animation: lexPulse 7s ease-in-out infinite;"></div>
+    <!-- outer circle -->
+    <div style="position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(240,208,137,0.5); box-shadow: 0 0 40px rgba(212,168,67,0.35), inset 0 0 60px rgba(212,168,67,0.12);"></div>
+    <!-- longitude ellipses -->
+    <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 700px; height: 1000px; border-radius: 50%; border: 1px solid rgba(240,208,137,0.32);"></div>
+    <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 380px; height: 1000px; border-radius: 50%; border: 1px solid rgba(240,208,137,0.24);"></div>
+    <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 1000px; border-radius: 50%; border: 1px solid rgba(240,208,137,0.18);"></div>
+    <!-- latitude ellipses -->
+    <div style="position: absolute; top: 80px; left: 50%; transform: translateX(-50%); width: 560px; height: 130px; border-radius: 50%; border: 1px solid rgba(240,208,137,0.35);"></div>
+    <div style="position: absolute; top: 230px; left: 50%; transform: translateX(-50%); width: 860px; height: 180px; border-radius: 50%; border: 1px solid rgba(240,208,137,0.30);"></div>
+    <div style="position: absolute; top: 420px; left: 50%; transform: translateX(-50%); width: 1000px; height: 200px; border-radius: 50%; border: 1px solid rgba(240,208,137,0.25);"></div>
+    <!-- node points -->
+    <div style="position: absolute; top: 76px; left: 500px; width: 6px; height: 6px; border-radius: 50%; background: #F0D089; box-shadow: 0 0 12px #F0D089;"></div>
+    <div style="position: absolute; top: 142px; left: 222px; width: 5px; height: 5px; border-radius: 50%; background: rgba(240,208,137,0.9); box-shadow: 0 0 10px rgba(240,208,137,0.9);"></div>
+    <div style="position: absolute; top: 152px; left: 770px; width: 5px; height: 5px; border-radius: 50%; background: rgba(240,208,137,0.9); box-shadow: 0 0 10px rgba(240,208,137,0.9);"></div>
+    <div style="position: absolute; top: 300px; left: 74px; width: 4px; height: 4px; border-radius: 50%; background: rgba(240,208,137,0.7); box-shadow: 0 0 8px rgba(240,208,137,0.7);"></div>
+    <div style="position: absolute; top: 314px; left: 928px; width: 4px; height: 4px; border-radius: 50%; background: rgba(240,208,137,0.7); box-shadow: 0 0 8px rgba(240,208,137,0.7);"></div>
+    <div style="position: absolute; top: 262px; left: 500px; width: 4px; height: 4px; border-radius: 50%; background: rgba(240,208,137,0.8); box-shadow: 0 0 8px rgba(240,208,137,0.8);"></div>
+  </div>
+
+  <!-- vignette -->
+  <div style="position: absolute; inset: 0; background: radial-gradient(ellipse 75% 70% at 50% 50%, transparent 45%, rgba(3,5,10,0.9) 100%); pointer-events: none; z-index: 1;"></div>
+
+  <!-- ===== floating glass micro-cards ===== -->
+  <div style="position: absolute; top: 170px; left: 180px; z-index: 2; opacity: 0.55; animation: lexDrift 9s ease-in-out infinite; pointer-events: none;">
+    <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.09); backdrop-filter: blur(10px); box-shadow: 0 12px 30px rgba(0,0,0,0.3);">
+      <span style="width: 5px; height: 5px; border-radius: 50%; background: #F0D089; box-shadow: 0 0 8px #F0D089;"></span>
+      <span style="font-size: 12px; color: rgba(255,255,255,0.7);">Section 103 · BNS</span>
+    </div>
+  </div>
+  <div style="position: absolute; top: 560px; left: 244px; z-index: 2; opacity: 0.4; animation: lexDriftSlow 11s ease-in-out -3s infinite; pointer-events: none;">
+    <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.09); backdrop-filter: blur(10px); box-shadow: 0 12px 30px rgba(0,0,0,0.3);">
+      <span style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(240,208,137,0.8);">BNS · BNSS · BSA</span>
+    </div>
+  </div>
+  <div style="position: absolute; top: 236px; right: 196px; z-index: 2; opacity: 0.5; animation: lexDriftSlow 10s ease-in-out -5s infinite; pointer-events: none;">
+    <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.09); backdrop-filter: blur(10px); box-shadow: 0 12px 30px rgba(0,0,0,0.3);">
+      <span style="width: 5px; height: 5px; border-radius: 50%; background: #F0D089; box-shadow: 0 0 8px #F0D089;"></span>
+      <span style="font-size: 12px; color: rgba(255,255,255,0.7);">every answer cited</span>
+    </div>
+  </div>
+  <div style="position: absolute; top: 610px; right: 230px; z-index: 2; opacity: 0.38; animation: lexDrift 12s ease-in-out -6s infinite; pointer-events: none;">
+    <div style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.09); backdrop-filter: blur(10px); box-shadow: 0 12px 30px rgba(0,0,0,0.3);">
+      <span style="font-size: 12px; color: rgba(255,255,255,0.65);">§318 <span style="color: rgba(255,255,255,0.35);">was §420</span></span>
+    </div>
+  </div>
+
+  <!-- ===== auth card ===== -->
+  <div style="position: relative; z-index: 10; width: 420px;">
+    <!-- gold glow underneath -->
+    <div style="position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); width: 340px; height: 120px; background: radial-gradient(ellipse at center, rgba(212,168,67,0.4), transparent 70%); filter: blur(30px); pointer-events: none;"></div>
+
+    <div style="position: relative; border-radius: 24px; padding: 40px 36px 32px; background: linear-gradient(170deg, rgba(16,21,34,0.82), rgba(9,12,21,0.88)); border: 1px solid rgba(255,255,255,0.11); backdrop-filter: blur(18px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 40px 90px rgba(0,0,0,0.55);">
+
+      <!-- back to site -->
+      <a href="Lexora Landing.dc.html" style="position: absolute; top: 18px; left: 20px; display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: rgba(255,255,255,0.42);">← Back to site</a>
+
+      <!-- wordmark -->
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin-bottom: 30px;">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(145deg, #F0D089, #B8862F); box-shadow: 0 0 28px rgba(212,168,67,0.6), inset 0 1px 0 rgba(255,255,255,0.5); display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque'; font-weight: 700; font-size: 22px; color: #1a1200;">L</div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+          <span style="font-family: 'Bricolage Grotesque'; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; color: #fff;">Lexora</span>
+          <span style="font-size: 13.5px; color: rgba(255,255,255,0.5);">Your rights, explained.</span>
+        </div>
+      </div>
+
+      <!-- tab toggle -->
+      <div style="display: flex; padding: 4px; border-radius: 999px; background: rgba(4,7,14,0.6); border: 1px solid rgba(255,255,255,0.07); margin-bottom: 26px;">
+        <button onClick="{{ setLogin }}" style="{{ loginTabStyle }}">Log in</button>
+        <button onClick="{{ setSignup }}" style="{{ signupTabStyle }}">Sign up</button>
+      </div>
+
+      <!-- fields -->
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <label style="font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,0.6);">Email</label>
+          <input type="email" placeholder="you@example.com" style="width: 100%; padding: 13px 16px; border-radius: 12px; background: rgba(4,7,14,0.55); border: 1px solid rgba(255,255,255,0.11); color: #fff; font-family: 'Inter'; font-size: 14px; outline: none;" style-focus="border: 1px solid rgba(212,168,67,0.7); box-shadow: 0 0 0 3px rgba(212,168,67,0.14), 0 0 20px rgba(212,168,67,0.18);">
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+          <label style="font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,0.6);">Password</label>
+          <div style="position: relative;">
+            <input type="{{ pwType }}" placeholder="••••••••" style="width: 100%; padding: 13px 46px 13px 16px; border-radius: 12px; background: rgba(4,7,14,0.55); border: 1px solid rgba(255,255,255,0.11); color: #fff; font-family: 'Inter'; font-size: 14px; outline: none;" style-focus="border: 1px solid rgba(212,168,67,0.7); box-shadow: 0 0 0 3px rgba(212,168,67,0.14), 0 0 20px rgba(212,168,67,0.18);">
+            <button onClick="{{ togglePw }}" aria-label="Toggle password visibility" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border: none; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.45); border-radius: 8px;" style-hover="color: rgba(240,208,137,0.9);">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
+        </div>
+
+        <sc-if value="{{ isSignup }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; gap: 7px;">
+            <label style="font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,0.6);">Confirm password</label>
+            <input type="password" placeholder="••••••••" style="width: 100%; padding: 13px 16px; border-radius: 12px; background: rgba(4,7,14,0.55); border: 1px solid rgba(255,255,255,0.11); color: #fff; font-family: 'Inter'; font-size: 14px; outline: none;" style-focus="border: 1px solid rgba(212,168,67,0.7); box-shadow: 0 0 0 3px rgba(212,168,67,0.14), 0 0 20px rgba(212,168,67,0.18);">
+          </div>
+        </sc-if>
+
+        <button onClick="{{ goApp }}" style="width: 100%; margin-top: 8px; padding: 14px; border: none; border-radius: 999px; background: linear-gradient(145deg, #F0D089, #C99A38); color: #1a1200; font-family: 'Inter'; font-size: 15px; font-weight: 600; cursor: pointer; box-shadow: 0 8px 30px rgba(212,168,67,0.45), inset 0 1px 0 rgba(255,255,255,0.5);" style-hover="box-shadow: 0 10px 38px rgba(212,168,67,0.6), inset 0 1px 0 rgba(255,255,255,0.5); filter: brightness(1.05);">{{ ctaLabel }}</button>
+
+        <sc-if value="{{ isLogin }}" hint-placeholder-val="{{ true }}">
+          <div style="text-align: center; margin-top: 4px;">
+            <a href="#" style="font-size: 13px; color: rgba(255,255,255,0.45);">Forgot password?</a>
+          </div>
+        </sc-if>
+      </div>
+
+      <p style="margin: 26px 0 0; text-align: center; font-size: 11.5px; line-height: 1.5; color: rgba(255,255,255,0.32);">Lexora provides legal information, not legal advice.</p>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1440, &quot;height&quot;: 900}, &quot;mode&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;login&quot;, &quot;signup&quot;], &quot;default&quot;: &quot;login&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;State&quot;}}">
+class Component extends DCLogic {
+  state = { mode: null, showPw: false };
+  componentDidUpdate(prevProps) {
+    if (prevProps && prevProps.mode !== this.props.mode && this.state.mode !== null) {
+      this.setState({ mode: null });
+    }
+  }
+  renderVals() {
+    const mode = this.state.mode ?? this.props.mode ?? 'login';
+    const isSignup = mode === 'signup';
+    const tabBase = 'flex: 1; padding: 10px; border: none; border-radius: 999px; font-family: Inter; font-size: 14px; font-weight: 600; cursor: pointer; transition: all .25s;';
+    const active = tabBase + ' background: linear-gradient(145deg, #F0D089, #C99A38); color: #1a1200; box-shadow: 0 4px 18px rgba(212,168,67,0.4), inset 0 1px 0 rgba(255,255,255,0.45);';
+    const idle = tabBase + ' background: transparent; color: rgba(255,255,255,0.55);';
+    const toStyle = (s) => { const o = {}; s.split(';').forEach(r => { const i = r.indexOf(':'); if (i < 0) return; const k = r.slice(0,i).trim().replace(/-([a-z])/g, (_,c) => c.toUpperCase()); const v = r.slice(i+1).trim(); if (k) o[k] = v; }); return o; };
+    return {
+      isSignup,
+      isLogin: !isSignup,
+      ctaLabel: isSignup ? 'Create account' : 'Log in',
+      pwType: this.state.showPw ? 'text' : 'password',
+      loginTabStyle: toStyle(isSignup ? idle : active),
+      signupTabStyle: toStyle(isSignup ? active : idle),
+      setLogin: () => this.setState({ mode: 'login' }),
+      setSignup: () => this.setState({ mode: 'signup' }),
+      togglePw: () => this.setState(s => ({ showPw: !s.showPw })),
+      goApp: () => { window.location.href = 'Lexora Chat.dc.html'; },
+    };
+  }
+}
+</script>
+</body>
+</html>

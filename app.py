@@ -8,7 +8,6 @@ from auth import get_current_user, require_admin
 from routers import conversations, admin
 
 
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s"
@@ -47,8 +46,6 @@ app.add_middleware(
 async def root():
     logger.info("Health check called")
     return {"status": "ok"}
-
-
 
 
 
@@ -99,6 +96,30 @@ def signup(signup_data: SignupRequest):
         raise HTTPException(status_code=400, detail="Something went wrong")
 
 
+
+@app.get("/auth/me")
+def get_me(current_user = Depends(get_current_user)):
+    try:
+        role = supabase.table("profiles").select("role").eq("user_id", current_user.id).single().execute()
+        return {
+            "id": str(current_user.id),
+            "email": current_user.email,
+            "role": role.data["role"]
+        }
+    except Exception as e:
+        print("Profile lookup error:", e)
+        raise HTTPException(500, "Could not find user Information!")
+
+
+
+@app.post("/auth/logout")
+def logout(current_user = Depends(get_current_user)):
+    # revoke the session server-side
+    supabase_auth.auth.sign_out()
+    return {"message": "Logged out"}
+
+
+
 @app.post("/ask", response_model=AskResponse)
 def ask(requestData: AskRequest, current_user = Depends(get_current_user)):
     logger.info("Received question: %s", requestData.question)
@@ -115,7 +136,7 @@ def ask(requestData: AskRequest, current_user = Depends(get_current_user)):
             requestData.question
         )
         raise HTTPException(status_code=500, detail="Something went wrong")
-    
+
 
 
 @app.get("/admin/test")
@@ -126,3 +147,5 @@ def admin_test(current_user = Depends(require_admin)):
 
 app.include_router(conversations.router, prefix="/conversations")
 # app.include_router(admin.router, prefix="/admin")
+
+

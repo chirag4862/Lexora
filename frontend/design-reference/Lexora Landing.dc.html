@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #04070E; }
+  body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--g2,#D4A843); text-decoration: none; }
+  a:hover { color: var(--g4,#F0D089); }
+  @keyframes lexFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+  @keyframes lexFloatSlow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-22px); } }
+  @keyframes lexPulse { 0%,100% { opacity: .55; } 50% { opacity: .9; } }
+  @keyframes lexSpin { to { transform: rotate(360deg); } }
+  @keyframes lexSway { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="width: 1440px; margin: 0 auto; background: #070B14; position: relative; overflow: hidden; color: rgba(255,255,255,0.92);">
+
+  <!-- ambient depth glows -->
+  <div style="position: absolute; top: -180px; left: 50%; transform: translateX(-50%); width: 1100px; height: 900px; background: radial-gradient(ellipse at center, rgba(var(--gRGB,212,168,67),0.22), rgba(var(--gRGB,212,168,67),0.06) 40%, transparent 68%); filter: blur(20px); pointer-events: none; z-index: 0; opacity: var(--glow,1);"></div>
+  <div style="position: absolute; top: 340px; left: -120px; width: 620px; height: 620px; background: radial-gradient(circle at center, rgba(74,110,180,0.14), transparent 66%); filter: blur(30px); pointer-events: none; z-index: 0;"></div>
+  <div style="position: absolute; top: 1500px; right: -160px; width: 700px; height: 700px; background: radial-gradient(circle at center, rgba(var(--gRGB,212,168,67),0.10), transparent 66%); filter: blur(40px); pointer-events: none; z-index: 0; opacity: var(--glow,1);"></div>
+  <!-- vignette -->
+  <div style="position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 30%, transparent 55%, rgba(3,5,10,0.85) 100%); pointer-events: none; z-index: 1;"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav data-screen-label="Nav" style="position: relative; z-index: 20; display: flex; align-items: center; justify-content: space-between; padding: 30px 64px; max-width: 1312px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: 11px;">
+      <div style="width: 26px; height: 26px; border-radius: 7px; background: linear-gradient(145deg, var(--g4,#F0D089), var(--g0,#B8862F)); box-shadow: 0 0 18px rgba(var(--gRGB,212,168,67),0.55); display: flex; align-items: center; justify-content: center;">
+        <div style="width: 9px; height: 9px; border: 1.5px solid #1a1200; border-radius: 2px; transform: rotate(45deg);"></div>
+      </div>
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: #fff;">Lexora</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 38px; font-size: 14.5px; color: rgba(255,255,255,0.6); font-weight: 450;">
+      <a href="#" style="color: rgba(255,255,255,0.6);">Product</a>
+      <a href="#" style="color: rgba(255,255,255,0.6);">Coverage</a>
+      <a href="#" style="color: rgba(255,255,255,0.6);">Pricing</a>
+      <a href="#" style="color: rgba(255,255,255,0.6);">Docs</a>
+    </div>
+    <div style="display: flex; align-items: center; gap: 22px;">
+      <a href="Lexora Auth.dc.html" style="color: rgba(255,255,255,0.72); font-size: 14.5px; font-weight: 450;">Log in</a>
+      <a href="Lexora Auth.dc.html" style="display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 999px; background: linear-gradient(145deg, var(--g4,#F0D089), var(--g1,#C99A38)); color: #1a1200; font-size: 14px; font-weight: 600; box-shadow: 0 4px 22px rgba(var(--gRGB,212,168,67),0.35), inset 0 1px 0 rgba(255,255,255,0.4);">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section data-screen-label="Hero" style="position: relative; z-index: 10; height: 880px;">
+
+    <!-- centerpiece: glass scales composition -->
+    <div style="position: absolute; top: 96px; left: 50%; transform: translateX(-50%); width: 720px; height: 700px; z-index: 5;">
+      <!-- core glow -->
+      <div style="position: absolute; top: 120px; left: 50%; transform: translateX(-50%); width: 520px; height: 520px; background: radial-gradient(circle at 50% 45%, rgba(var(--gLRGB,240,208,137),0.45), rgba(var(--gRGB,212,168,67),0.18) 38%, transparent 66%); filter: blur(28px); animation: lexPulse 6s ease-in-out infinite;"></div>
+
+      <!-- whole scale floats gently as one -->
+      <div style="position: absolute; inset: 0; animation: lexFloatSlow 11s ease-in-out infinite;">
+
+        <!-- finial + pivot orb -->
+        <div style="position: absolute; top: 92px; left: 332px; width: 56px; height: 56px; border-radius: 50%; background: radial-gradient(circle at 35% 28%, rgba(255,255,255,0.95), rgba(var(--gLRGB,240,208,137),0.55) 42%, rgba(120,85,20,0.3) 100%); box-shadow: 0 0 44px rgba(var(--gLRGB,240,208,137),0.7), inset 0 0 18px rgba(255,255,255,0.45); z-index: 7;"></div>
+
+        <!-- beam -->
+        <div style="position: absolute; top: 154px; left: 140px; width: 440px; height: 8px; border-radius: 999px; background: linear-gradient(90deg, rgba(var(--gLRGB,240,208,137),0.55), rgba(var(--gLRGB,240,208,137),0.95) 50%, rgba(var(--gLRGB,240,208,137),0.55)); box-shadow: 0 0 26px rgba(var(--gLRGB,240,208,137),0.55), 0 1px 0 rgba(255,255,255,0.35) inset; z-index: 6;"></div>
+        <!-- beam end caps -->
+        <div style="position: absolute; top: 151px; left: 133px; width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.9), rgba(var(--gLRGB,240,208,137),0.6) 55%, rgba(120,85,20,0.4)); box-shadow: 0 0 14px rgba(var(--gLRGB,240,208,137),0.7); z-index: 7;"></div>
+        <div style="position: absolute; top: 151px; left: 573px; width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.9), rgba(var(--gLRGB,240,208,137),0.6) 55%, rgba(120,85,20,0.4)); box-shadow: 0 0 14px rgba(var(--gLRGB,240,208,137),0.7); z-index: 7;"></div>
+
+        <!-- column -->
+        <div style="position: absolute; top: 146px; left: 356px; width: 8px; height: 324px; border-radius: 999px; background: linear-gradient(180deg, rgba(var(--gLRGB,240,208,137),0.9), rgba(var(--gRGB,212,168,67),0.3)); box-shadow: 0 0 22px rgba(var(--gLRGB,240,208,137),0.35); z-index: 4;"></div>
+        <!-- pedestal -->
+        <div style="position: absolute; top: 466px; left: 300px; width: 120px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, rgba(var(--gLRGB,240,208,137),0.25), rgba(var(--gLRGB,240,208,137),0.8), rgba(var(--gLRGB,240,208,137),0.25)); box-shadow: 0 0 18px rgba(var(--gLRGB,240,208,137),0.4); z-index: 4;"></div>
+        <div style="position: absolute; top: 478px; left: 268px; width: 184px; height: 12px; border-radius: 999px; background: linear-gradient(90deg, rgba(var(--gRGB,212,168,67),0.1), rgba(var(--gRGB,212,168,67),0.55), rgba(var(--gRGB,212,168,67),0.1)); box-shadow: 0 0 22px rgba(var(--gRGB,212,168,67),0.35); z-index: 4;"></div>
+        <div style="position: absolute; top: 492px; left: 250px; width: 220px; height: 22px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(var(--gLRGB,240,208,137),0.4), transparent 70%); filter: blur(4px); z-index: 3;"></div>
+
+        <!-- LEFT hanger: strings + pan travel together -->
+        <div style="position: absolute; top: 158px; left: 40px; width: 200px; height: 200px; z-index: 5; animation: lexSway 6s ease-in-out infinite;">
+          <div style="position: absolute; top: -6px; left: 95px; width: 10px; height: 10px; border-radius: 50%; background: rgba(var(--gLRGB,240,208,137),0.9); box-shadow: 0 0 10px rgba(var(--gLRGB,240,208,137),0.8);"></div>
+          <div style="position: absolute; top: 2px; left: 99px; width: 1.5px; height: 122px; background: linear-gradient(180deg, rgba(var(--gLRGB,240,208,137),0.85), rgba(var(--gLRGB,240,208,137),0.25)); transform: rotate(32deg); transform-origin: top center;"></div>
+          <div style="position: absolute; top: 2px; left: 99px; width: 1.5px; height: 122px; background: linear-gradient(180deg, rgba(var(--gLRGB,240,208,137),0.85), rgba(var(--gLRGB,240,208,137),0.25)); transform: rotate(-32deg); transform-origin: top center;"></div>
+          <div style="position: absolute; top: 100px; left: 20px; width: 160px; height: 16px; border-radius: 50%; border: 1px solid rgba(var(--gLRGB,240,208,137),0.75); background: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0.04)); box-shadow: 0 0 16px rgba(var(--gRGB,212,168,67),0.3); z-index: 3;"></div>
+          <div style="position: absolute; top: 109px; left: 20px; width: 160px; height: 56px; border-radius: 0 0 80px 80px / 0 0 50px 50px; background: linear-gradient(165deg, rgba(255,255,255,0.13), rgba(var(--gRGB,212,168,67),0.12) 45%, rgba(90,120,180,0.10)); border: 1px solid rgba(var(--gLRGB,240,208,137),0.55); border-top: none; backdrop-filter: blur(8px); box-shadow: 0 20px 50px rgba(0,0,0,0.4), inset 0 6px 16px rgba(255,255,255,0.16), 0 0 36px rgba(var(--gRGB,212,168,67),0.25); z-index: 2;"></div>
+          <div style="position: absolute; top: 116px; left: 38px; width: 58px; height: 16px; border-radius: 50%; background: linear-gradient(90deg, rgba(255,255,255,0.45), transparent); filter: blur(4px); z-index: 3;"></div>
+        </div>
+
+        <!-- RIGHT hanger -->
+        <div style="position: absolute; top: 158px; left: 480px; width: 200px; height: 200px; z-index: 5; animation: lexSway 7.5s ease-in-out -2.5s infinite;">
+          <div style="position: absolute; top: -6px; left: 95px; width: 10px; height: 10px; border-radius: 50%; background: rgba(var(--gLRGB,240,208,137),0.9); box-shadow: 0 0 10px rgba(var(--gLRGB,240,208,137),0.8);"></div>
+          <div style="position: absolute; top: 2px; left: 99px; width: 1.5px; height: 122px; background: linear-gradient(180deg, rgba(var(--gLRGB,240,208,137),0.85), rgba(var(--gLRGB,240,208,137),0.25)); transform: rotate(32deg); transform-origin: top center;"></div>
+          <div style="position: absolute; top: 2px; left: 99px; width: 1.5px; height: 122px; background: linear-gradient(180deg, rgba(var(--gLRGB,240,208,137),0.85), rgba(var(--gLRGB,240,208,137),0.25)); transform: rotate(-32deg); transform-origin: top center;"></div>
+          <div style="position: absolute; top: 100px; left: 20px; width: 160px; height: 16px; border-radius: 50%; border: 1px solid rgba(var(--gLRGB,240,208,137),0.75); background: linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0.04)); box-shadow: 0 0 16px rgba(var(--gRGB,212,168,67),0.3); z-index: 3;"></div>
+          <div style="position: absolute; top: 109px; left: 20px; width: 160px; height: 56px; border-radius: 0 0 80px 80px / 0 0 50px 50px; background: linear-gradient(165deg, rgba(255,255,255,0.13), rgba(90,120,180,0.10) 45%, rgba(var(--gRGB,212,168,67),0.12)); border: 1px solid rgba(var(--gLRGB,240,208,137),0.55); border-top: none; backdrop-filter: blur(8px); box-shadow: 0 20px 50px rgba(0,0,0,0.4), inset 0 6px 16px rgba(255,255,255,0.16), 0 0 36px rgba(var(--gRGB,212,168,67),0.25); z-index: 2;"></div>
+          <div style="position: absolute; top: 116px; left: 38px; width: 58px; height: 16px; border-radius: 50%; background: linear-gradient(90deg, rgba(255,255,255,0.45), transparent); filter: blur(4px); z-index: 3;"></div>
+        </div>
+
+      </div>
+
+      <!-- iridescent floating shards -->
+      <div style="position: absolute; top: 60px; left: 40px; width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, rgba(120,150,220,0.28), transparent 65%); filter: blur(12px); animation: lexFloatSlow 9s ease-in-out infinite;"></div>
+      <div style="position: absolute; top: 380px; left: 540px; width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, rgba(var(--gLRGB,240,208,137),0.22), transparent 65%); filter: blur(14px); animation: lexFloat 10s ease-in-out infinite;"></div>
+    </div>
+
+    <!-- headline overlapping visual -->
+    <div style="position: relative; z-index: 12; max-width: 1312px; margin: 0 auto; padding: 0 64px; height: 100%;">
+      <h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; color: #fff; letter-spacing: -0.035em; line-height: 0.92; pointer-events: none;">
+        <span style="display: block; font-size: 116px; font-weight: 500; padding-top: 118px;">Know your</span>
+        <span style="display: block; font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; font-size: 190px; letter-spacing: -0.02em; line-height: 0.8; margin-top: 6px; margin-left: -6px; background: linear-gradient(110deg, var(--g4,#F0D089), var(--g2,#D4A843) 55%, var(--g0,#B8862F)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 60px rgba(var(--gRGB,212,168,67),0.35);">rights.</span>
+        <span style="display: block; font-size: 128px; font-weight: 600; text-align: right; margin-top: 190px; letter-spacing: -0.04em;">Instantly.</span>
+      </h1>
+    </div>
+
+    <!-- floating stat labels with connectors -->
+    <div style="position: absolute; z-index: 14; top: 404px; left: 1020px; pointer-events: none;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="width: 5px; height: 5px; border-radius: 50%; background: var(--g4,#F0D089); box-shadow: 0 0 8px var(--g4,#F0D089);"></span>
+        <span style="width: 46px; height: 1px; background: linear-gradient(90deg, rgba(var(--gLRGB,240,208,137),0.7), transparent);"></span>
+        <span style="font-family: 'Inter'; font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.68); white-space: nowrap;">every answer cited</span>
+      </div>
+    </div>
+    <div style="position: absolute; z-index: 14; top: 528px; left: 288px; pointer-events: none;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-family: 'Inter'; font-size: 11.5px; letter-spacing: 0.16em; color: rgba(var(--gLRGB,240,208,137),0.85); white-space: nowrap;">BNS · BNSS · BSA</span>
+        <span style="width: 46px; height: 1px; background: linear-gradient(90deg, rgba(var(--gLRGB,240,208,137),0.7), transparent);"></span>
+        <span style="width: 5px; height: 5px; border-radius: 50%; background: var(--g4,#F0D089); box-shadow: 0 0 8px var(--g4,#F0D089);"></span>
+      </div>
+    </div>
+
+    <!-- subline + CTA row -->
+    <div style="position: absolute; z-index: 16; bottom: 92px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 30px;">
+      <p style="margin: 0; text-align: center; font-size: 17px; color: rgba(255,255,255,0.62); max-width: 460px; line-height: 1.5;">AI answers grounded in the actual text of Indian law.</p>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="Lexora Auth.dc.html" style="display: inline-flex; align-items: center; gap: 9px; padding: 15px 30px; border-radius: 999px; background: linear-gradient(145deg, var(--g4,#F0D089), var(--g1,#C99A38)); color: #1a1200; font-size: 15.5px; font-weight: 600; box-shadow: 0 8px 34px rgba(var(--gRGB,212,168,67),0.42), inset 0 1px 0 rgba(255,255,255,0.5);">Get Started Free <span style="font-size: 17px;">→</span></a>
+        <a href="#" style="display: inline-flex; align-items: center; gap: 9px; padding: 15px 28px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.14); color: rgba(255,255,255,0.86); font-size: 15.5px; font-weight: 500; backdrop-filter: blur(8px);">See how it works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section data-screen-label="Trust strip" style="position: relative; z-index: 10; max-width: 1180px; margin: 0 auto; padding: 60px 64px 40px; text-align: center;">
+    <p style="margin: 0 0 26px; font-size: 12.5px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.4);">Grounded in official legislation</p>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;">
+      <span style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); font-size: 13.5px; font-weight: 500; color: rgba(255,255,255,0.62);">BNS 2023</span>
+      <span style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); font-size: 13.5px; font-weight: 500; color: rgba(255,255,255,0.62);">BNSS 2023</span>
+      <span style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); font-size: 13.5px; font-weight: 500; color: rgba(255,255,255,0.62);">BSA 2023</span>
+      <span style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); font-size: 13.5px; font-weight: 500; color: rgba(255,255,255,0.62);">IPC</span>
+      <span style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); font-size: 13.5px; font-weight: 500; color: rgba(255,255,255,0.62);">CrPC</span>
+      <span style="padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02); font-size: 13.5px; font-weight: 500; color: rgba(255,255,255,0.62);">IEA</span>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE CARDS ============ -->
+  <section data-screen-label="Features" style="position: relative; z-index: 10; max-width: 1312px; margin: 0 auto; padding: 60px 64px 40px;">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+
+      <!-- Card 1: Always cited -->
+      <div style="border-radius: 22px; padding: 30px 28px 28px; background: linear-gradient(165deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)); border: 1px solid rgba(255,255,255,0.09); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 60px rgba(0,0,0,0.35); backdrop-filter: blur(12px);">
+        <h3 style="margin: 0 0 8px; font-family: 'Bricolage Grotesque'; font-size: 21px; font-weight: 600; color: #fff; letter-spacing: -0.02em;">Always cited</h3>
+        <p style="margin: 0 0 22px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,0.55);">Every answer links back to the exact section it came from.</p>
+        <!-- mini answer mockup -->
+        <div style="border-radius: 14px; padding: 16px; background: rgba(4,7,14,0.72); border: 1px solid rgba(255,255,255,0.07); overflow: hidden;">
+          <p style="margin: 0 0 12px; font-size: 12.5px; line-height: 1.6; color: rgba(255,255,255,0.72);">Theft is punishable with imprisonment up to three years, a fine, or both.</p>
+          <div style="display: flex; gap: 7px; flex-wrap: wrap;">
+            <span style="display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; border-radius: 7px; background: rgba(var(--gRGB,212,168,67),0.14); border: 1px solid rgba(var(--gRGB,212,168,67),0.35); font-size: 11px; color: var(--g4,#F0D089);">§303 BNS</span>
+            <span style="display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; border-radius: 7px; background: rgba(var(--gRGB,212,168,67),0.14); border: 1px solid rgba(var(--gRGB,212,168,67),0.35); font-size: 11px; color: var(--g4,#F0D089);">§378 IPC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Follow-ups -->
+      <div style="border-radius: 22px; padding: 30px 28px 28px; background: linear-gradient(165deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)); border: 1px solid rgba(255,255,255,0.09); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 60px rgba(0,0,0,0.35); backdrop-filter: blur(12px);">
+        <h3 style="margin: 0 0 8px; font-family: 'Bricolage Grotesque'; font-size: 21px; font-weight: 600; color: #fff; letter-spacing: -0.02em;">Understands follow-ups</h3>
+        <p style="margin: 0 0 22px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,0.55);">Ask naturally. Lexora keeps the thread of your case in context.</p>
+        <!-- mini chat mockup -->
+        <div style="border-radius: 14px; padding: 16px; background: rgba(4,7,14,0.72); border: 1px solid rgba(255,255,255,0.07); overflow: hidden; display: flex; flex-direction: column; gap: 9px;">
+          <div style="align-self: flex-end; max-width: 78%; padding: 8px 12px; border-radius: 12px 12px 3px 12px; background: linear-gradient(145deg, var(--g3,#E9CA80), var(--g1,#C99A38)); color: #1a1200; font-size: 12px; line-height: 1.4;">Is it different for a first offence?</div>
+          <div style="align-self: flex-start; max-width: 82%; padding: 8px 12px; border-radius: 12px 12px 12px 3px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.78); font-size: 12px; line-height: 1.4;">Yes — courts may consider it in sentencing. Here's how…</div>
+          <div style="align-self: flex-start; display: flex; gap: 4px; padding: 6px 10px;">
+            <span style="width: 5px; height: 5px; border-radius: 50%; background: rgba(var(--gLRGB,240,208,137),0.8); animation: lexPulse 1.2s ease-in-out infinite;"></span>
+            <span style="width: 5px; height: 5px; border-radius: 50%; background: rgba(var(--gLRGB,240,208,137),0.8); animation: lexPulse 1.2s ease-in-out infinite .2s;"></span>
+            <span style="width: 5px; height: 5px; border-radius: 50%; background: rgba(var(--gLRGB,240,208,137),0.8); animation: lexPulse 1.2s ease-in-out infinite .4s;"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Current vs old -->
+      <div style="border-radius: 22px; padding: 30px 28px 28px; background: linear-gradient(165deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)); border: 1px solid rgba(255,255,255,0.09); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 24px 60px rgba(0,0,0,0.35); backdrop-filter: blur(12px);">
+        <h3 style="margin: 0 0 8px; font-family: 'Bricolage Grotesque'; font-size: 21px; font-weight: 600; color: #fff; letter-spacing: -0.02em;">Current law, old law context</h3>
+        <p style="margin: 0 0 22px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,0.55);">See how the new codes map onto the sections they replaced.</p>
+        <!-- mini toggle mockup -->
+        <div style="border-radius: 14px; padding: 16px; background: rgba(4,7,14,0.72); border: 1px solid rgba(255,255,255,0.07); overflow: hidden;">
+          <div style="display: flex; padding: 3px; border-radius: 9px; background: rgba(255,255,255,0.04); margin-bottom: 14px;">
+            <span style="flex: 1; text-align: center; padding: 7px; border-radius: 7px; background: linear-gradient(145deg, var(--g3,#E9CA80), var(--g1,#C99A38)); color: #1a1200; font-size: 11.5px; font-weight: 600;">BNS 2023</span>
+            <span style="flex: 1; text-align: center; padding: 7px; border-radius: 7px; color: rgba(255,255,255,0.5); font-size: 11.5px; font-weight: 500;">IPC 1860</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 12px;">
+            <span style="color: var(--g4,#F0D089); font-weight: 600;">§303</span>
+            <span style="flex: 1; height: 1px; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.25) 0 4px, transparent 4px 8px);"></span>
+            <span style="color: rgba(255,255,255,0.45);">was §378</span>
+          </div>
+          <div style="margin-top: 10px; display: flex; align-items: center; gap: 10px; font-size: 12px;">
+            <span style="color: var(--g4,#F0D089); font-weight: 600;">§318</span>
+            <span style="flex: 1; height: 1px; background: repeating-linear-gradient(90deg, rgba(255,255,255,0.25) 0 4px, transparent 4px 8px);"></span>
+            <span style="color: rgba(255,255,255,0.45);">was §420</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section data-screen-label="CTA band" style="position: relative; z-index: 10; max-width: 1312px; margin: 60px auto 0; padding: 0 64px;">
+    <div style="position: relative; border-radius: 28px; overflow: hidden; padding: 92px 64px; text-align: center; background: linear-gradient(160deg, rgba(28,22,10,0.9), rgba(10,12,20,0.9)); border: 1px solid rgba(var(--gRGB,212,168,67),0.28); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);">
+      <div style="position: absolute; top: -120px; left: 50%; transform: translateX(-50%); width: 700px; height: 400px; background: radial-gradient(ellipse at center, rgba(var(--gRGB,212,168,67),0.35), transparent 68%); filter: blur(24px); pointer-events: none; opacity: var(--glow,1);"></div>
+      <div style="position: relative;">
+        <h2 style="margin: 0 0 26px; font-family: 'Bricolage Grotesque'; font-size: 58px; font-weight: 600; letter-spacing: -0.03em; color: #fff; line-height: 1.02;">Justice shouldn't need<br><span style="font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; background: linear-gradient(110deg, var(--g4,#F0D089), var(--g2,#D4A843)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">a translator.</span></h2>
+        <a href="Lexora Auth.dc.html" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 34px; border-radius: 999px; background: linear-gradient(145deg, var(--g4,#F0D089), var(--g1,#C99A38)); color: #1a1200; font-size: 16px; font-weight: 600; box-shadow: 0 10px 40px rgba(var(--gRGB,212,168,67),0.5), inset 0 1px 0 rgba(255,255,255,0.5);">Get Started Free <span style="font-size: 18px;">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer data-screen-label="Footer" style="position: relative; z-index: 10; max-width: 1312px; margin: 0 auto; padding: 70px 64px 50px;">
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 34px; border-bottom: 1px solid rgba(255,255,255,0.07);">
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <div style="width: 24px; height: 24px; border-radius: 6px; background: linear-gradient(145deg, var(--g4,#F0D089), var(--g0,#B8862F)); box-shadow: 0 0 14px rgba(var(--gRGB,212,168,67),0.45); display: flex; align-items: center; justify-content: center;">
+          <div style="width: 8px; height: 8px; border: 1.5px solid #1a1200; border-radius: 2px; transform: rotate(45deg);"></div>
+        </div>
+        <span style="font-family: 'Bricolage Grotesque'; font-weight: 700; font-size: 18px; color: #fff;">Lexora</span>
+      </div>
+      <div style="display: flex; gap: 64px; font-size: 13.5px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;">Product</span>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Coverage</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Pricing</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Changelog</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;">Company</span>
+          <a href="#" style="color: rgba(255,255,255,0.6);">About</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Careers</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Contact</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="color: rgba(255,255,255,0.4); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;">Legal</span>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Privacy</a>
+          <a href="#" style="color: rgba(255,255,255,0.6);">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 26px;">
+      <p style="margin: 0; font-size: 12.5px; color: rgba(255,255,255,0.4);">Lexora provides legal information, not legal advice.</p>
+      <p style="margin: 0; font-size: 12.5px; color: rgba(255,255,255,0.35);">© 2026 Lexora</p>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1440, &quot;height&quot;: 3100}, &quot;accent&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#D4A843&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Theme&quot;, &quot;options&quot;: [&quot;#D4A843&quot;, &quot;#C77D45&quot;, &quot;#9E7BE0&quot;, &quot;#4F9E8A&quot;]}, &quot;glow&quot;: {&quot;editor&quot;: &quot;range&quot;, &quot;default&quot;: 1, &quot;min&quot;: 0, &quot;max&quot;: 1.6, &quot;step&quot;: 0.1, &quot;tsType&quot;: &quot;number&quot;, &quot;section&quot;: &quot;Theme&quot;, &quot;unit&quot;: &quot;x&quot;}}">class Component extends DCLogic {
+  hexToRgb(h) {
+    h = (h || '#D4A843').replace('#', '');
+    if (h.length === 3) h = h.split('').map(c => c + c).join('');
+    return [parseInt(h.slice(0,2),16), parseInt(h.slice(2,4),16), parseInt(h.slice(4,6),16)];
+  }
+  mix(rgb, target, t) { return rgb.map((c,i) => Math.round(c + (target[i]-c)*t)); }
+  applyVars() {
+    const el = this.rootRef; if (!el) return;
+    const base = this.hexToRgb(this.props.accent || '#D4A843');
+    const W = [255,255,255], K = [12,8,0];
+    const g4 = this.mix(base, W, 0.38), g3 = this.mix(base, W, 0.18);
+    const g1 = this.mix(base, K, 0.16), g0 = this.mix(base, K, 0.32);
+    const rgb = a => a.join(',');
+    const hex = a => '#' + a.map(c => c.toString(16).padStart(2,'0')).join('');
+    el.style.setProperty('--g2', hex(base));
+    el.style.setProperty('--g4', hex(g4));
+    el.style.setProperty('--g3', hex(g3));
+    el.style.setProperty('--g1', hex(g1));
+    el.style.setProperty('--g0', hex(g0));
+    el.style.setProperty('--gRGB', rgb(base));
+    el.style.setProperty('--gLRGB', rgb(g4));
+    el.style.setProperty('--glow', String(this.props.glow ?? 1));
+  }
+  componentDidMount() { this.rootRef = this.rootRef || null; this.applyVars(); }
+  componentDidUpdate() { this.applyVars(); }
+  renderVals() {
+    return { rootRef: (n) => { this.rootRef = n; if (n) this.applyVars(); } };
+  }
+}</script>
+</body>
+</html>

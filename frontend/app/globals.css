@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #070b14;
+  --color-bg-deep: #04070e;
+
+  --color-gold-light: #f0d089;
+  --color-gold: #d4a843;
+  --color-gold-mid: #c99a38;
+  --color-gold-soft: #e9ca80;
+  --color-gold-dark: #b8862f;
+
+  --color-ink: #ffffff;
+  --color-body-text: rgba(255, 255, 255, 0.6);
+  --color-muted: rgba(255, 255, 255, 0.4);
+  --color-border: rgba(255, 255, 255, 0.09);
+
+  --radius-pill: 999px;
+  --radius-card: 22px;
+}
+
+@theme inline {
+  --font-heading: var(--font-bricolage);
+  --font-body: var(--font-inter);
+  --font-accent: var(--font-instrument-serif);
+}
+
+:root {
+  --gold-rgb: 212, 168, 67;
+  --gold-light-rgb: 240, 208, 137;
+}
+
+body {
+  background: var(--color-bg-deep);
+  color: var(--color-ink);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-gold-light);
+}
+
+@keyframes lexFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes lexFloatSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+}
+
+@keyframes lexPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes lexSway {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes lexDrift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes lexDriftSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.lex-input {
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.lex-input:focus {
+  border-color: rgba(var(--gold-rgb), 0.7);
+  box-shadow:
+    0 0 0 3px rgba(var(--gold-rgb), 0.14),
+    0 0 20px rgba(var(--gold-rgb), 0.18);
+}
+
+.lex-icon-btn {
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.lex-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.lex-gold-btn {
+  transition:
+    filter 0.2s,
+    box-shadow 0.2s;
+}
+
+.lex-gold-btn:hover {
+  filter: brightness(1.06);
+}
+
+.lex-sidebar-item {
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.lex-sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.lex-feature-card {
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.lex-feature-card:hover {
+  border-color: rgba(var(--gold-light-rgb), 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 0 24px rgba(var(--gold-rgb), 0.15);
+  transform: translateY(-2px);
+}
+
+.lex-suggestion-chip {
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s;
+}
+
+.lex-suggestion-chip:hover {
+  border-color: rgba(var(--gold-light-rgb), 0.45);
+  color: rgba(var(--gold-light-rgb), 0.9);
+  background: rgba(var(--gold-rgb), 0.07);
+}
+
+.lex-citation-chip {
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.lex-citation-chip:hover {
+  background: rgba(var(--gold-rgb), 0.16);
+  box-shadow: 0 0 20px rgba(var(--gold-rgb), 0.25);
+}
+
+.lex-logout-btn {
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.lex-logout-btn:hover {
+  background: rgba(255, 120, 120, 0.14);
+  color: rgba(255, 150, 150, 0.95);
+}
+
+.lex-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.lex-delete-btn {
+  transition:
+    background 0.15s,
+    color 0.15s;
+}
+
+.lex-delete-btn:hover {
+  background: rgba(255, 120, 120, 0.16);
+  color: rgba(255, 150, 150, 0.95);
+}
