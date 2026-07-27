@@ -6,20 +6,22 @@ import pickle
 from langchain_classic.retrievers import EnsembleRetriever
 from langchain_community.cross_encoders import HuggingFaceCrossEncoder
 
+import os
 from typing import TypedDict, Optional
 from collections import defaultdict
 from dotenv import load_dotenv
 load_dotenv()
 
 
-
+EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "BAAI/bge-large-en")
+RERANKER_MODEL = os.environ.get("RERANKER_MODEL", "BAAI/bge-reranker-base")
 
 embedding_model = HuggingFaceEmbeddings(
-    model_name="Models/bge-large-en",
+    model_name=EMBEDDING_MODEL,
     model_kwargs={"device": "cpu"},
     encode_kwargs={"normalize_embeddings": True}
 )
-cross_encoder = HuggingFaceCrossEncoder(model_name="Models/bge-reranker-base")
+cross_encoder = HuggingFaceCrossEncoder(model_name=RERANKER_MODEL)
 
 
 Vectordb = Chroma(persist_directory="Database", embedding_function=embedding_model)

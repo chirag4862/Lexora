@@ -1,0 +1,27 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - hf_cache:/app/.hf_cache
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      - DOMAIN=${DOMAIN}
+    depends_on:
+      - app
+
+volumes:
+  hf_cache:
+  caddy_data:
+  caddy_config:

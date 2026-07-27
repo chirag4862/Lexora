@@ -33,6 +33,8 @@ class AskResponse(BaseModel):
 
 app = FastAPI()
 
+# TODO(deploy phase 2): lock allow_origins down to the Vercel frontend domain
+# instead of "*" once that domain is known.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

@@ -19,7 +19,8 @@ When you add judgments — we will add "caselaws" as an act_type(metadata[2]) va
 # All the pdf's are in here
 files = os.listdir("Data")
 
-Embedding_model = HuggingFaceEmbeddings(model_name="Models/bge-large-en")
+EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "BAAI/bge-large-en")
+Embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 VectorStorage = Chroma(persist_directory="Database", embedding_function=Embedding_model)
 
 

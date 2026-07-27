@@ -1,0 +1,7 @@
+venv/
+Models/
+frontend/
+EvalData/
+__pycache__/
+.git/
+*.pyc
