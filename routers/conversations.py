@@ -1,5 +1,5 @@
 import logging
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from Generation import generate_answer
 from database import supabase
 from pydantic import BaseModel
@@ -7,6 +7,7 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 
 from auth import get_current_user
+from limiter import limiter
 router = APIRouter()
 
 logging.basicConfig(
@@ -79,7 +80,8 @@ class AskResponse(BaseModel):
     answer_found: bool
 
 @router.post("/{conversation_id}/ask", response_model=AskResponse)
-def ask(conversation_id: str, requestData: AskRequest, current_user = Depends(get_current_user)):
+@limiter.limit("10/minute")
+def ask(conversation_id: str, requestData: AskRequest, request: Request, current_user = Depends(get_current_user)):
     logger.info("Received question: %s", requestData.question)
     try:
         owns = supabase.table("conversations").select("id").eq("id", conversation_id).eq("user_id", current_user.id).execute()

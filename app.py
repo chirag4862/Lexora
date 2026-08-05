@@ -1,4 +1,4 @@
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from Generation import generate_answer
@@ -6,6 +6,10 @@ import logging
 from database import supabase, supabase_auth
 from auth import get_current_user, require_admin
 from routers import conversations, admin
+from slowapi import _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
+from limiter import limiter
 
 
 logging.basicConfig(
@@ -33,11 +37,19 @@ class AskResponse(BaseModel):
 
 app = FastAPI()
 
-# TODO(deploy phase 2): lock allow_origins down to the Vercel frontend domain
-# instead of "*" once that domain is known.
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+app.add_middleware(SlowAPIMiddleware)
+
+# Allowed frontend origins for CORS. Append additional domains here
+# (e.g. a custom domain) as they come online.
+CORS_ORIGINS = [
+    "https://lexora-omega-eight.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -52,7 +64,8 @@ async def root():
 
 
 @app.post("/auth/login")
-def login(login_data: LoginRequest):
+@limiter.limit("5/minute")
+def login(login_data: LoginRequest, request: Request):
     email = login_data.email
     password = login_data.password
     response_dict = {}
@@ -78,7 +91,8 @@ def login(login_data: LoginRequest):
 
 
 @app.post("/auth/signup")
-def signup(signup_data: SignupRequest):
+@limiter.limit("5/minute")
+def signup(signup_data: SignupRequest, request: Request):
     email = signup_data.email
     password = signup_data.password
     response_dict = {}
