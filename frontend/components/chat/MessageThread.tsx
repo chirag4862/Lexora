@@ -10,8 +10,8 @@ interface MessageThreadProps {
 
 export default function MessageThread({ messages, pending }: MessageThreadProps) {
   return (
-    <div className="flex-1 overflow-y-auto py-9">
-      <div className="mx-auto flex max-w-[720px] flex-col gap-7 px-8">
+    <div className="flex-1 overflow-y-auto py-5 lg:py-9">
+      <div className="mx-auto flex max-w-[720px] flex-col gap-6 px-4 sm:px-6 lg:gap-7 lg:px-8">
         {messages.map((message) =>
           message.role === "user" ? (
             <MessageBubble key={message.id} content={message.content} />

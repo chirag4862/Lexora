@@ -37,6 +37,8 @@ interface SidebarProps {
   onDeleteConversation: (id: string) => void;
   userEmail: string;
   onLogout: () => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 function initialsFromEmail(email: string): string {
@@ -56,6 +58,8 @@ export default function Sidebar({
   onDeleteConversation,
   userEmail,
   onLogout,
+  isOpen,
+  onClose,
 }: SidebarProps) {
   const [query, setQuery] = useState("");
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -83,33 +87,64 @@ export default function Sidebar({
   }, [conversations, query]);
 
   return (
-    <aside
-      className="flex w-[280px] flex-shrink-0 flex-col"
-      style={{
-        background: "rgba(4,7,14,0.72)",
-        borderRight: "1px solid rgba(255,255,255,0.07)",
-        backdropFilter: "blur(14px)",
-      }}
-    >
-      {/* wordmark row */}
-      <div className="flex items-center px-[18px] pt-5 pb-[14px]">
-        <Link href="/" className="flex items-center gap-[10px]">
-          <div
-            className="font-heading flex h-6 w-6 items-center justify-center rounded-[7px] text-[13px] font-bold"
-            style={{
-              background:
-                "linear-gradient(145deg, var(--color-gold-light), var(--color-gold-dark))",
-              boxShadow: "0 0 14px rgba(var(--gold-rgb),0.5)",
-              color: "#1a1200",
-            }}
+    <>
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/60 lg:hidden"
+          onClick={onClose}
+          aria-hidden="true"
+        />
+      )}
+      <aside
+        className={`fixed inset-y-0 left-0 z-50 flex w-[280px] flex-shrink-0 flex-col transition-transform duration-300 ease-out lg:static lg:z-auto lg:translate-x-0 lg:transition-none ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+        style={{
+          background: "rgba(4,7,14,0.72)",
+          borderRight: "1px solid rgba(255,255,255,0.07)",
+          backdropFilter: "blur(14px)",
+        }}
+      >
+        {/* wordmark row */}
+        <div className="flex items-center justify-between px-[18px] pt-5 pb-[14px]">
+          <Link href="/" className="flex items-center gap-[10px]">
+            <div
+              className="font-heading flex h-6 w-6 items-center justify-center rounded-[7px] text-[13px] font-bold"
+              style={{
+                background:
+                  "linear-gradient(145deg, var(--color-gold-light), var(--color-gold-dark))",
+                boxShadow: "0 0 14px rgba(var(--gold-rgb),0.5)",
+                color: "#1a1200",
+              }}
+            >
+              L
+            </div>
+            <span className="font-heading text-[17px] font-bold tracking-[-0.02em] text-white">
+              Lexora
+            </span>
+          </Link>
+          <button
+            type="button"
+            aria-label="Close menu"
+            onClick={onClose}
+            className="lex-icon-btn flex h-8 w-8 items-center justify-center rounded-lg lg:hidden"
+            style={{ color: "rgba(255,255,255,0.6)" }}
           >
-            L
-          </div>
-          <span className="font-heading text-[17px] font-bold tracking-[-0.02em] text-white">
-            Lexora
-          </span>
-        </Link>
-      </div>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
 
       {/* search */}
       <div className="px-[14px] pt-1 pb-3">
@@ -258,6 +293,7 @@ export default function Sidebar({
           </button>
         </div>
       </div>
-    </aside>
+      </aside>
+    </>
   );
 }

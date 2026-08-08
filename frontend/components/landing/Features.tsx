@@ -60,9 +60,9 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="relative z-10 mx-auto max-w-[1312px] px-16 pt-[60px] pb-10"
+      className="relative z-10 mx-auto max-w-[1312px] px-5 pt-12 pb-10 sm:px-8 lg:px-16 lg:pt-[60px]"
     >
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {/* Card 1: Always cited */}
         <CardShell
           title="Always cited"

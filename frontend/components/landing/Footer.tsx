@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 mx-auto max-w-[1312px] px-16 pt-[70px] pb-[50px]">
+    <footer className="relative z-10 mx-auto max-w-[1312px] px-5 pt-12 pb-10 sm:px-8 lg:px-16 lg:pt-[70px] lg:pb-[50px]">
       <div
-        className="flex items-center justify-between pb-[34px]"
+        className="flex flex-col gap-4 pb-[34px] sm:flex-row sm:items-center sm:justify-between"
         style={{ borderBottom: "1px solid rgba(255,255,255,0.07)" }}
       >
         <div className="flex items-center gap-[11px]">
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between pt-[26px]">
+      <div className="flex flex-col gap-2 pt-[26px] sm:flex-row sm:items-center sm:justify-between">
         <p className="text-[12.5px]" style={{ color: "var(--color-muted)" }}>
           Lexora provides legal information, not legal advice.
         </p>

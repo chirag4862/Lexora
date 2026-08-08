@@ -105,7 +105,7 @@ export default function WelcomeState({
   onPromptSelect: (prompt: string) => void;
 }) {
   return (
-    <div className="relative flex flex-1 flex-col items-center justify-center px-[60px] pt-10">
+    <div className="relative flex flex-1 flex-col items-center justify-center overflow-y-auto px-5 py-8 sm:px-10 lg:px-[60px] lg:pt-10">
       {/* § emblem */}
       <div className="relative mb-[26px]">
         <div
@@ -135,18 +135,18 @@ export default function WelcomeState({
         </div>
       </div>
 
-      <h1 className="font-heading mb-[10px] text-[34px] font-semibold tracking-[-0.025em] text-white">
+      <h1 className="font-heading mb-[10px] text-center text-[26px] font-semibold tracking-[-0.025em] text-white sm:text-[30px] lg:text-[34px]">
         Welcome to Lexora.
       </h1>
       <p
-        className="mb-[38px] max-w-[480px] text-center text-[15px] leading-[1.55]"
+        className="mb-[30px] max-w-[480px] text-center text-[15px] leading-[1.55] lg:mb-[38px]"
         style={{ color: "rgba(255,255,255,0.52)" }}
       >
         Ask anything about Indian law — every answer cited to the exact section.
       </p>
 
       {/* feature cards */}
-      <div className="mb-[22px] grid w-full max-w-[860px] grid-cols-4 gap-[14px]">
+      <div className="mb-[22px] grid w-full max-w-[860px] grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-[14px] lg:grid-cols-4">
         {FEATURES.map((feature, i) => (
           <button
             key={feature.title}

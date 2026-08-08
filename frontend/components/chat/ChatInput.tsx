@@ -20,7 +20,7 @@ export default function ChatInput({ onSend, disabled = false }: ChatInputProps) 
   }
 
   return (
-    <div className="flex flex-col items-center gap-[10px] px-[60px] pb-[22px]">
+    <div className="flex flex-col items-center gap-[10px] px-4 pb-3 sm:px-8 lg:px-[60px] lg:pb-[22px]">
       <form
         onSubmit={handleSubmit}
         className="rounded-pill flex w-full max-w-[760px] items-center gap-[10px] py-[9px] pr-[10px] pl-[18px]"
@@ -38,7 +38,7 @@ export default function ChatInput({ onSend, disabled = false }: ChatInputProps) 
           onChange={(e) => setValue(e.target.value)}
           placeholder="Ask about Indian law…"
           disabled={disabled}
-          className="flex-1 border-none bg-transparent text-[14.5px] text-white outline-none disabled:opacity-50"
+          className="flex-1 border-none bg-transparent text-base text-white outline-none disabled:opacity-50 sm:text-[14.5px]"
         />
         <button
           type="submit"

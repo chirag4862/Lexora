@@ -4,7 +4,7 @@ export default function TrustStrip() {
   return (
     <section
       id="coverage"
-      className="relative z-10 mx-auto max-w-[1180px] px-16 pt-[60px] pb-10 text-center"
+      className="relative z-10 mx-auto max-w-[1180px] px-5 pt-12 pb-10 text-center sm:px-8 lg:px-16 lg:pt-[60px]"
     >
       <p
         className="mb-[26px] text-[12.5px] tracking-[0.22em] uppercase"

@@ -98,7 +98,7 @@ export default function LoginPage() {
       <FloatingChips />
 
       {/* auth card */}
-      <div className="relative z-10 w-[420px]">
+      <div className="relative z-10 w-[calc(100vw-40px)] max-w-[420px]">
         <div
           className="pointer-events-none absolute"
           style={{
@@ -114,7 +114,7 @@ export default function LoginPage() {
         />
 
         <div
-          className="relative rounded-[24px] px-9 pt-10 pb-8"
+          className="relative rounded-[24px] px-6 pt-10 pb-8 sm:px-9"
           style={{
             background:
               "linear-gradient(170deg, rgba(16,21,34,0.82), rgba(9,12,21,0.88))",
@@ -199,7 +199,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="lex-input w-full rounded-xl px-4 py-[13px] text-sm"
+                className="lex-input w-full rounded-xl px-4 py-[13px] text-base sm:text-sm"
                 style={inputStyle}
               />
             </div>
@@ -221,14 +221,14 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="lex-input w-full rounded-xl py-[13px] pr-[46px] pl-4 text-sm"
+                  className="lex-input w-full rounded-xl py-[13px] pr-[46px] pl-4 text-base sm:text-sm"
                   style={inputStyle}
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword((v) => !v)}
                   aria-label="Toggle password visibility"
-                  className="absolute top-1/2 right-2 flex h-[34px] w-[34px] -translate-y-1/2 items-center justify-center rounded-lg"
+                  className="absolute top-1/2 right-1.5 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg sm:right-2 sm:h-[34px] sm:w-[34px]"
                   style={{
                     color: showPassword
                       ? "var(--color-gold-light)"
@@ -269,7 +269,7 @@ export default function LoginPage() {
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   placeholder="••••••••"
-                  className="lex-input w-full rounded-xl px-4 py-[13px] text-sm"
+                  className="lex-input w-full rounded-xl px-4 py-[13px] text-base sm:text-sm"
                   style={inputStyle}
                 />
               </div>

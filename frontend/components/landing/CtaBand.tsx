@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function CtaBand() {
   return (
-    <section className="relative z-10 mx-auto mt-[60px] max-w-[1312px] px-16">
+    <section className="relative z-10 mx-auto mt-12 max-w-[1312px] px-5 sm:px-8 lg:mt-[60px] lg:px-16">
       <div
-        className="relative overflow-hidden rounded-[28px] px-16 py-[92px] text-center"
+        className="relative overflow-hidden rounded-[28px] px-6 py-14 text-center sm:px-10 sm:py-20 lg:px-16 lg:py-[92px]"
         style={{
           background:
             "linear-gradient(160deg, rgba(28,22,10,0.9), rgba(10,12,20,0.9))",
@@ -27,7 +27,7 @@ export default function CtaBand() {
         />
         <div className="relative">
           <h2
-            className="font-heading mb-[26px] text-[58px] font-semibold tracking-[-0.03em] text-white"
+            className="font-heading mb-[26px] text-[36px] font-semibold tracking-[-0.03em] text-white sm:text-[46px] lg:text-[58px]"
             style={{ lineHeight: 1.02 }}
           >
             Justice shouldn&apos;t need
