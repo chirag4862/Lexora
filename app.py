@@ -43,9 +43,7 @@ app.add_middleware(SlowAPIMiddleware)
 
 # Allowed frontend origins for CORS. Append additional domains here
 # (e.g. a custom domain) as they come online.
-CORS_ORIGINS = [
-    "https://lexora-omega-eight.vercel.app",
-]
+CORS_ORIGINS = ["https://lexora.cvijay.dev", "https://lexora-omega-eight.vercel.app"]
 
 app.add_middleware(
     CORSMiddleware,
